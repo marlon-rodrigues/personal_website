@@ -7,15 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <script src="js/vendor/jquery-ui-1.11.2/jquery-ui.min.css"></script>
-        <script src="js/vendor/jquery-ui-1.11.2/jquery-ui.structure.min.css"></script>
-        <script src="js/vendor/jquery-ui-1.11.2/jquery-ui.theme.min.css"></script>
+        <link rel="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.min.css">
+        <link rel="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="js/vendor/jquery-1.11.1.js"></script>
-        <script src="js/vendor/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
         <script src="js/stellar.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
         
         <!--[if lt IE 7]>
             <style type="text/css">
@@ -25,5 +27,12 @@
     </head>
     <body>
        Hello World!
+       <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">                        
+            <a class="button" data-slide="2" title=""></a>    
+            <span class="slideno">Slide 1</span>
+        </div>
+        <div class="slide" id="slide2" data-slide="1" data-stellar-background-ratio="0.5">                        
+            <span class="slideno">Slide 2</span>
+        </div>
     </body>
 </html>
