@@ -5,9 +5,51 @@
     }  
      
 html,body{ 
-    font-family: 'BebasRegular';    
+    font-family: 'calibri';    
     width:100%;     
     height:100%;  
+}
+
+#profile_pic {
+    height: 7em;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+header {
+    //background: #525252;
+    background: snow;
+}
+
+.name_title {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+#first_name_title {
+    font-size: 2em;
+}
+
+#last_name_title {
+    color: #3170BA;
+    font-size: 2em;
+}
+
+.email_title{
+    display: inline-block;
+    float: right;
+    margin-top: 4.2em;
+    padding-right: 1em;
+}
+
+#email_desc {
+    color: #8E8787;
+}
+
+#job_title {
+    color: #3170BA;
 }
 
 .navigation {   
