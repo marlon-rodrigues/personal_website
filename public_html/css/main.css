@@ -11,10 +11,11 @@ html,body{
     margin:0;
     padding:0;
     overflow-x:hidden;
+    min-width: 410px;
 }
 
 #profile_pic {
-    height: 7em;
+    height: 9em;
     display: inline-block;
     margin-left: 1.5em;
 }
@@ -24,27 +25,32 @@ header {
     background: snow;
 }
 
+.copyrights {
+    margin-top: 12em;
+}
+
 .name_title {
     display: inline-block;
     vertical-align: top;
-    margin-top: 1.2em;
+    margin-top: 2em;
     margin-left: 1em;
 }
 
 #first_name_title {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 #last_name_title {
     color: #3170BA;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .menu_title{
     display: inline-block;
     float: right;
-    margin-top: 4.2em;
+    margin-top: 4.8em;
     padding-right: 2em;
+    font-size: 1.3em;
 }
 
 .menu_item {
@@ -52,7 +58,9 @@ header {
 }
 
 #job_title {
-    color: #3170BA;
+    //color: #3170BA;
+    color: #8E8787;
+    font-size: 1.2em;
 }
 
 .navigation {   
@@ -82,19 +90,9 @@ header {
 .slide {
     background-attachment: fixed;
     width:100%;
-    height:100%;
     position: relative;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
     text-align: center;
-}
-
-.slideno {
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    font-size:100px;
-    font-weight:bold;
-    color:rgba(255,255,255,0.3);
 }
 
 .slide_title {
@@ -102,7 +100,7 @@ header {
     font-size:60px;
     font-weight:bold;
     display: inline-block;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
 }
 
 .slide_text {
@@ -119,19 +117,8 @@ header {
     color: rgba(255,255,255,0.9);
 }
 
-.button{
-    display:block;
-    width:50px;
-    height:50px;
-    position:absolute;
-    bottom:0px;
-    left:50%;
-    background-color:#333333;
-    background-repeat:no-repeat;
-}
-.button:hover{
-    background-color:#494949;
-    cursor:pointer;
+#slide_text4 {
+    font-size: 25px;
 }
 
 /******************************
@@ -141,6 +128,7 @@ header {
     //background-color:#5c9900;
     background-image: url('../images/guitar3.jpg'); 
     opacity: 0.8;
+    height:80%;
 }
 /******************************
  SLIDE 2 
@@ -149,6 +137,7 @@ header {
     //background-color:#5c9900;
     background-image: url('../images/graduation5.jpg'); 
     opacity: 0.8;
+    height:90%;
 }
 /******************************
  SLIDE 3
@@ -157,11 +146,14 @@ header {
     //background-color:#5c9900;
     background-image: url('../images/work1.jpg'); 
     opacity: 0.7;
+    height:100%;
 }
 /******************************
  SLIDE 4 
 *******************************/
-#slide2{
-    background-color:#005c99;
-     
+#slide4{
+    //background-color:#005c99;
+    background-image: url('../images/cup2.jpg'); 
+    opacity: 0.8;
+    height:60%;
 }
