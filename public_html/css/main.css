@@ -31,7 +31,6 @@ html,body{
 }
 
 header {
-    //background: #525252;
     background: snow;
 }
 
@@ -64,7 +63,6 @@ header {
 }
 
 #job_title {
-    //color: #3170BA;
     color: #8E8787;
     font-size: 1.2em;
 }
@@ -173,4 +171,37 @@ footer {
     bottom:0;
     color:snow;
     background: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a.active {
+    color: black;
+}
+
+.menu_item a{
+    color: #8E8787;
+}
+
+.menu_item a:visited {
+    color: #8E8787;
+}
+
+.menu_item a:hover {
+    color: #8E8787;
+}
+
+.menu_item a.active {
+    color: #8E8787;
 }
