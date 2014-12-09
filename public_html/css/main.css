@@ -14,6 +14,16 @@ html,body{
     min-width: 410px;
 }
 
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#content {
+    padding-bottom:5em;   /* Height of the footer element */
+    height: 50em;
+}
+
 #profile_pic {
     height: 9em;
     display: inline-block;
@@ -128,7 +138,7 @@ header {
     //background-color:#5c9900;
     background-image: url('../images/guitar3.jpg'); 
     opacity: 0.8;
-    height:100%;
+    height:80%;
 }
 /******************************
  SLIDE 2 
@@ -137,7 +147,7 @@ header {
     //background-color:#5c9900;
     background-image: url('../images/graduation5.jpg'); 
     opacity: 0.8;
-    height:100%;
+    height:90%;
 }
 /******************************
  SLIDE 3
@@ -155,5 +165,13 @@ header {
     //background-color:#005c99;
     background-image: url('../images/cup2.jpg'); 
     opacity: 0.8;
-    height:100%;
+    height:60%;
+}
+
+footer {
+    height: 5em;
+    width: 100%;
+    font-weight: normal;
+    position:absolute;
+    bottom:0;
 }
