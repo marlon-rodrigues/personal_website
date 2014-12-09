@@ -207,7 +207,76 @@ a.active {
    ========================================================================== */
 
 @media only screen and (max-width: 480px) {
+    #content {
+        padding-bottom:75em;   
+        height: 50em;
+    }
     
+    h1 {
+        font-size: 12px;
+        margin-top: 1em;
+    }
+    
+    #profile_pic {
+        display: none;
+    }
+
+    #first_name_title {
+        font-size: 3em;
+    }
+
+    #last_name_title {
+        font-size: 3em;
+    }
+
+    .menu_title{
+        display: none;
+    }
+
+    #job_title {
+        font-size: 1.2em;
+    }
+    
+    .slide_title {
+        color: #3170BA;
+        font-size:20px;
+        margin-top: 1.2em;
+    }
+
+    .slide_text {
+        margin-top: 2em;
+        font-size:17px;
+        width: 60%;
+    }
+    
+    #slide_text4 {
+        font-size: 16px;
+    }
+    
+    /******************************
+    SLIDE 1 
+   *******************************/
+   #slide1{
+       height:70%;
+   }
+   /******************************
+    SLIDE 2 
+   *******************************/
+   #slide2{
+       height:65%;
+   }
+   /******************************
+    SLIDE 3
+   *******************************/
+   #slide3{
+       height:75%;
+   }
+   /******************************
+    SLIDE 4 
+   *******************************/
+   #slide4{
+       height:35%;
+   }
 }
 
 @media only screen and (max-width: 1012px) and (min-width: 481px) {
