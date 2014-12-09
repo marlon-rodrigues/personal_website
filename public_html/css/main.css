@@ -20,7 +20,7 @@ html,body{
 }
 
 #content {
-    padding-bottom:5em;   /* Height of the footer element */
+    padding-bottom:117em;   
     height: 50em;
 }
 
@@ -33,10 +33,6 @@ html,body{
 header {
     //background: #525252;
     background: snow;
-}
-
-.copyrights {
-    margin-top: 12em;
 }
 
 .name_title {
@@ -169,9 +165,12 @@ header {
 }
 
 footer {
-    height: 5em;
+    text-align: center;
+    height: 3.5em;
     width: 100%;
     font-weight: normal;
     position:absolute;
     bottom:0;
+    color:snow;
+    background: black;
 }
