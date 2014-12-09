@@ -24,7 +24,7 @@ header {
 .name_title {
     display: inline-block;
     vertical-align: top;
-    margin-top: 2em;
+    margin-top: 1.2em;
     margin-left: 1em;
 }
 
@@ -37,14 +37,14 @@ header {
     font-size: 2em;
 }
 
-.email_title{
+.menu_title{
     display: inline-block;
     float: right;
     margin-top: 4.2em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
-#email_desc {
+.menu_item {
     color: #8E8787;
 }
 
