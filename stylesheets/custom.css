@@ -13,10 +13,10 @@ html {
 }
 body {
     height: 100%;
-    /*color: #414042;*/
     color: #525c65;
+    overflow-y: scroll;
 }
-h1 {
+h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
@@ -89,6 +89,7 @@ table {
 }
 #main-navigation .main-navigation-body .main-nav-item i:hover {
     cursor: pointer;
+    color: #2C9BD9;
 }
 #main-navigation .main-navigation-footer {
     position: fixed;
@@ -104,13 +105,69 @@ table {
 }
 #main-navigation .main-navigation-footer i:hover {
     cursor: pointer;
+    color: #2C9BD9;
 }
+#main-navigation .main-nav-item.active i {
+    color: #2C9BD9;
+}   
 /******* END MAIN NAVIGATION *********/
 
 /******* BEGIN SITE CONTENT **********/
 .content-container {
-    margin-left: -3em;
+    height: 100%;
+    margin-top: 11.35em;
+    margin-left: -0.9em;
     padding-left: 0;
+    padding-right: 0;
 }
 /******* END SITE CONTENT **********/
 
+/******* BEGIN SUB NAVIGATION ******/
+#sub-navigation {
+    height: 100%;
+    position: fixed;
+    background: #313D48;
+    color: #ffffff;
+    padding: 0em;
+    overflow: auto;
+}
+#sub-navigation .sub-navigation-item {
+    height: 55%;
+    overflow: scroll;
+}
+#sub-navigation .sub-navigation-header {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #000;
+}
+#sub-navigation .sub-navigation-header h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+#sub-navigation .sub-navigation-body {
+    padding: 0.5em 0em;
+}
+#sub-navigation .sub-navigation-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#sub-navigation .sub-navigation-body ul li {
+    font-size: 0.9em;
+    position: relative;
+    border-bottom: 1px solid #222;
+    padding: 1.5em;
+}
+#sub-navigation .sub-navigation-body ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#sub-navigation .sub-navigation-body ul li i {
+    position: absolute;
+    top: 40%;
+    right: 1em;
+}
+/******* END SUB NAVIGATION ******/

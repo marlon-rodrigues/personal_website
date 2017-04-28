@@ -20,4 +20,7 @@ $(document).ready(function(){
 		
 		//load main navigation 
 	templateLoad('main-navigation', null, '#main-navigation', null);
+
+		//load sub navigation 
+	templateLoad('sub-navigation', null, '#sub-navigation', null);
 });
