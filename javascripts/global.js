@@ -15,6 +15,9 @@ function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - V
 }
 
 $(document).ready(function(){
+		//load site header
+	templateLoad('site-header', null, '#site-header', null);
+		
 		//load main navigation 
 	templateLoad('main-navigation', null, '#main-navigation', null);
 });

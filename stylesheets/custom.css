@@ -7,38 +7,76 @@ font-family: 'Lato', sans-serif;
 *{
     font-family: 'Open Sans', sans-serif;
 }
-
-header {
-    background-color: #ffffff;
-    border: none;
-    position: relative;
-    min-height: 11.7em;
-}
-
 html {
     height: 100%;
     overflow-y: scroll;
 }
-
 body {
     height: 100%;
     color: #414042;
 }
-
 a {
 	color: #5887C6;
 }
-
 a:active, a:hover {
     color: #2A4C7A;
 }
-
 table {
     width: 100%;
 }
 
 /******* BEGIN MAIN NAVIGATION *********/
-
-
-
+.main-navigation-container {
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+#main-navigation {
+    background: #1E262E;
+    height: 100%;
+    position: fixed;
+    padding: 0em 1.5em 1em;
+    overflow: auto;
+    width: 5.5em;
+}
+#main-navigation .main-navigation-header {
+    position: fixed;
+    width: 50px;
+}
+#main-navigation .main-navigation-header img {
+    width: 300%;
+    margin-left: -1.5em;
+} 
+#main-navigation .main-navigation-body {
+    margin-top: 12em;
+    text-align: center;
+    min-height: 20em;
+} 
+#main-navigation .main-navigation-body .main-nav-item {
+    margin-bottom: 1.7em;
+}
+#main-navigation .main-navigation-body .main-nav-item i {
+    color: #ffffff;
+    font-size: 2em;
+}
+#main-navigation .main-navigation-body .main-nav-item i:hover {
+    cursor: pointer;
+}
+#main-navigation .main-navigation-footer {
+    position: fixed;
+    bottom: 1.5em;
+    left: 1.9em;
+    text-align: center;
+}
+#main-navigation .main-navigation-footer i {
+    color: #ffffff;
+    font-size: 2em;
+}
+#main-navigation .main-navigation-footer i:hover {
+    cursor: pointer;
+}
 /******* END MAIN NAVIGATION *********/
+
+/******* BEGIN SITE HEADER **********/
+
+/******* END SITE HEADER **********/
