@@ -13,7 +13,12 @@ html {
 }
 body {
     height: 100%;
-    color: #414042;
+    /*color: #414042;*/
+    color: #525c65;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 a {
 	color: #5887C6;
@@ -24,6 +29,29 @@ a:active, a:hover {
 table {
     width: 100%;
 }
+
+/******* BEGIN SITE HEADER **********/
+.site-header-container {
+    padding-left: 11.5em;
+    padding-right: 1em;
+    width: 100%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    position: fixed;
+}
+.site-header-container #site-header h1 {
+    margin-bottom: 0em;
+}
+.site-header-container #site-header h1 span {
+    color: #3170BA;
+}
+.site-header-container #site-header .position {
+    color: #8E8787;
+    font-family: 'Lato', sans-serif;
+}
+.site-header-container #site-header p {
+    font-family: 'Lato', sans-serif;   
+}
+/******* END SITE HEADER **********/
 
 /******* BEGIN MAIN NAVIGATION *********/
 .main-navigation-container {
@@ -48,7 +76,7 @@ table {
     margin-left: -1.5em;
 } 
 #main-navigation .main-navigation-body {
-    margin-top: 12em;
+    margin-top: 12.5em;
     text-align: center;
     min-height: 20em;
 } 
@@ -67,6 +95,8 @@ table {
     bottom: 1.5em;
     left: 1.9em;
     text-align: center;
+    z-index: 1000;
+    background: #1E262E;
 }
 #main-navigation .main-navigation-footer i {
     color: #ffffff;
@@ -77,6 +107,10 @@ table {
 }
 /******* END MAIN NAVIGATION *********/
 
-/******* BEGIN SITE HEADER **********/
+/******* BEGIN SITE CONTENT **********/
+.content-container {
+    margin-left: -3em;
+    padding-left: 0;
+}
+/******* END SITE CONTENT **********/
 
-/******* END SITE HEADER **********/
