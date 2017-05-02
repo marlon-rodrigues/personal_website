@@ -69,7 +69,7 @@ table {
     position: fixed;
     padding: 0em 1.5em 1em;
     overflow: auto;
-    width: 5.5em;
+    width: 6.4em;
 }
 #main-navigation .main-navigation-header {
     position: fixed;
@@ -98,7 +98,7 @@ table {
 #main-navigation .main-navigation-footer {
     position: fixed;
     bottom: 1.5em;
-    left: 1.9em;
+    left: 2.2em;
     text-align: center;
     z-index: 1000;
     background: #1E262E;
@@ -170,7 +170,7 @@ table {
 .content-container {
     height: 100%;
     margin-top: 11.35em;
-    margin-left: -0.9em;
+    margin-left: 0em;
     padding-left: 0;
     padding-right: 0;
 }
@@ -178,7 +178,7 @@ table {
     margin-left: 17.9999%;
 }
 #content-wrapper .content-body {
-    padding: 2em 0em 5em 2em;
+    padding: 2em 2em 5em;
 }
 #content-wrapper .content-body .box-wrapper {
     background: white;
@@ -189,6 +189,14 @@ table {
 /******* END SITE CONTENT **********/
 
 /******* BEGIN CAREERS SECTION *******/
+#careers {
+    background-image: url("../images/careers_background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.careers-content-wrapper {
+    opacity: 0.9;
+}
 .careers-content-wrapper .careers-content-item .careers-item-header {
     padding: 2em 2em 1em;
     border-bottom: 1px solid lightgray;
@@ -255,7 +263,6 @@ table {
     -o-transition-property:width, background-color;
     transition-property:width, background-color;
 }
-
 .skillbar-title {
     position:absolute;
     top:0;
@@ -273,7 +280,6 @@ table {
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
 }
-
 .skillbar-title span {
     display:block;
     /*background:rgba(0, 0, 0, 0.1);*/
@@ -289,7 +295,6 @@ table {
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
 }
-
 .skillbar-bar {
     height:25px;
     width:0px;
@@ -299,7 +304,6 @@ table {
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
 }
-
 .skill-bar-percent {
     position:absolute;
     right:-35px;
