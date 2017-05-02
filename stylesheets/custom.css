@@ -45,9 +45,7 @@ table {
 }
 .site-header-container #site-header h1 {
     margin-bottom: 0em;
-}
-.site-header-container #site-header h1 span {
-    color: #6EC4DB;
+    color: #1E262E;
 }
 .site-header-container #site-header .position {
     color: #8E8787;
@@ -203,7 +201,7 @@ table {
     margin-bottom: 0.1em;
 }
 .careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper h2 a {
-    color: #f47c92;
+    color: #A9A9A9;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -239,9 +237,9 @@ table {
 .skillbar {
     position:relative;
     display:block;
-    margin-bottom:7px;
-    width:100%;
-    background:#eee;
+    margin-bottom:15px;
+    width:90%;
+    background:#ccc;
     height:25px;
     border-radius:3px;
     -moz-border-radius:3px;
@@ -266,7 +264,8 @@ table {
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
-    background:#6adcfa;
+    /*background:#6adcfa;*/
+    background:#97c13c;
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:4px;
     -moz-border-radius-topleft:3px;
@@ -277,7 +276,8 @@ table {
 
 .skillbar-title span {
     display:block;
-    background:rgba(0, 0, 0, 0.1);
+    /*background:rgba(0, 0, 0, 0.1);*/
+    background:rgba(0, 0, 0, 0);
     padding:0 20px;
     height:25px;
     line-height:25px;
@@ -293,7 +293,8 @@ table {
 .skillbar-bar {
     height:25px;
     width:0px;
-    background:#6adcfa;
+    /*background:#6adcfa;*/
+    background:#97c13c;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -301,7 +302,7 @@ table {
 
 .skill-bar-percent {
     position:absolute;
-    right:10px;
+    right:-35px;
     top:0;
     font-size:11px;
     height:25px;
@@ -309,5 +310,7 @@ table {
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
 }
+
+
 /******* END CAREERS SECTION *******/
 
