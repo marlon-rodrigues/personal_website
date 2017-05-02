@@ -23,4 +23,23 @@ $(document).ready(function(){
 
 		//load sub navigation 
 	templateLoad('sub-navigation', null, '#sub-navigation', null);
+
+		//load careers
+	templateLoad('careers', null, '#careers', loadCareersSkillsSet);	
+
+
+	function createCareersCarousel() {
+		$('.careers-content-wrapper').owlCarousel({
+			items: 1,
+			nav: false
+		});
+	}
+
+	function loadCareersSkillsSet() { 
+		$('.skillbar').each(function() { 
+			$(this).find('.skillbar-bar').animate({
+				width:$(this).attr('data-percent')
+			},6000);
+		});
+	}
 });

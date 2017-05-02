@@ -29,6 +29,9 @@ a:active, a:hover {
 table {
     width: 100%;
 }
+.clear {
+    clear: both;
+}
 
 /******* BEGIN SITE HEADER **********/
 .site-header-container {
@@ -37,12 +40,14 @@ table {
     width: 100%;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
     position: fixed;
+    background: #ffffff;
+    z-index: 99;
 }
 .site-header-container #site-header h1 {
     margin-bottom: 0em;
 }
 .site-header-container #site-header h1 span {
-    color: #3170BA;
+    color: #6EC4DB;
 }
 .site-header-container #site-header .position {
     color: #8E8787;
@@ -58,6 +63,7 @@ table {
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    z-index: 999;
 }
 #main-navigation {
     background: #1E262E;
@@ -108,19 +114,9 @@ table {
     color: #2C9BD9;
 }
 #main-navigation .main-nav-item.active i {
-    color: #2C9BD9;
+    color: #6EC4DB;
 }   
 /******* END MAIN NAVIGATION *********/
-
-/******* BEGIN SITE CONTENT **********/
-.content-container {
-    height: 100%;
-    margin-top: 11.35em;
-    margin-left: -0.9em;
-    padding-left: 0;
-    padding-right: 0;
-}
-/******* END SITE CONTENT **********/
 
 /******* BEGIN SUB NAVIGATION ******/
 #sub-navigation {
@@ -171,3 +167,147 @@ table {
     right: 1em;
 }
 /******* END SUB NAVIGATION ******/
+
+/******* BEGIN SITE CONTENT **********/
+.content-container {
+    height: 100%;
+    margin-top: 11.35em;
+    margin-left: -0.9em;
+    padding-left: 0;
+    padding-right: 0;
+}
+#content-wrapper {
+    margin-left: 17.9999%;
+}
+#content-wrapper .content-body {
+    padding: 2em 0em 5em 2em;
+}
+#content-wrapper .content-body .box-wrapper {
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-bottom: 2.5em;
+}
+/******* END SITE CONTENT **********/
+
+/******* BEGIN CAREERS SECTION *******/
+.careers-content-wrapper .careers-content-item .careers-item-header {
+    padding: 2em 2em 1em;
+    border-bottom: 1px solid lightgray;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper {
+    float: left;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper h2 {
+    margin-top: 0em;
+    margin-bottom: 0.1em;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper h2 a {
+    color: #f47c92;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-position {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0em;
+    font-size: 1.1em;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-period {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 0.8em;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-description {
+    font-family: 'Lato', sans-serif;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .image-wrapper {
+    float: right;
+}
+.careers-content-wrapper .careers-content-item .careers-item-header .image-wrapper img {
+    width: 100%;
+}
+.careers-content-wrapper .careers-content-item .careers-item-skills {
+    padding: 1em 2em 2em;
+}
+.careers-content-wrapper .careers-content-item .careers-item-skills h3 {
+    margin-top: 0em;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:7px;
+    width:100%;
+    background:#eee;
+    height:25px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:25px;
+    line-height:25px;
+    font-size: 0.85em;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:25px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:25px;
+    line-height:25px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+/******* END CAREERS SECTION *******/
+
