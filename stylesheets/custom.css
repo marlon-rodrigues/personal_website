@@ -14,7 +14,6 @@ html {
 body {
     height: 100%;
     color: #525c65;
-    overflow-y: scroll;
 }
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -62,6 +61,7 @@ table {
     margin-right: -15px;
     position: relative;
     z-index: 999;
+    width: 6.4%;
 }
 #main-navigation {
     background: #1E262E;
@@ -69,7 +69,7 @@ table {
     position: fixed;
     padding: 0em 1.5em 1em;
     overflow: auto;
-    width: 6.4em;
+    width: 4.4em;
 }
 #main-navigation .main-navigation-header {
     position: fixed;
@@ -90,6 +90,7 @@ table {
 #main-navigation .main-navigation-body .main-nav-item i {
     color: #ffffff;
     font-size: 2em;
+    margin-left: -0.25em;
 }
 #main-navigation .main-navigation-body .main-nav-item i:hover {
     cursor: pointer;
@@ -106,6 +107,7 @@ table {
 #main-navigation .main-navigation-footer i {
     color: #ffffff;
     font-size: 2em;
+    margin-left: -0.6em;
 }
 #main-navigation .main-navigation-footer i:hover {
     cursor: pointer;
@@ -124,13 +126,23 @@ table {
     color: #ffffff;
     padding: 0em;
     overflow: auto;
+    /*width: 12%;*/
 }
 #sub-navigation .sub-navigation-item {
-    height: 55%;
+    /*height: 55%;*/
+    height: 75%;
     overflow: scroll;
+    display: none;
+}
+#sub-navigation .sub-navigation-item.active {
+    display: block;
+}
+#sub-navigation .sub-navigation-image img {
+    width: 100%;
 }
 #sub-navigation .sub-navigation-header {
     padding: 0.5em 1em;
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 #sub-navigation .sub-navigation-header h2 {
@@ -150,7 +162,7 @@ table {
     padding: 0;
 }
 #sub-navigation .sub-navigation-body ul li {
-    font-size: 0.9em;
+    font-size: 0.85em;
     position: relative;
     border-bottom: 1px solid #222;
     padding: 1.5em;
@@ -173,9 +185,13 @@ table {
     margin-left: 0em;
     padding-left: 0;
     padding-right: 0;
+    width: 93.6%;
 }
 #content-wrapper {
-    margin-left: 17.9999%;
+    /*margin-left: 12.8%;
+    width: 88.5%;*/
+    margin-left: 17.999%;
+    background: rgba(249,250,251,1);
 }
 #content-wrapper .content-body {
     padding: 2em 2em 5em;
@@ -188,55 +204,56 @@ table {
 }
 /******* END SITE CONTENT **********/
 
-/******* BEGIN CAREERS SECTION *******/
-#careers {
-    background-image: url("../images/careers_background_image.jpg");
+/******* BEGIN career SECTION *******/
+#career {
+    /*background-image: url("../images/career_background_image.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
 }
-.careers-content-wrapper {
-    opacity: 0.9;
+.career-content-wrapper {
+    /*opacity: 0.9;*/
+    background: #ffffff;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header {
+.career-content-wrapper .career-content-item .career-item-header {
     padding: 2em 2em 1em;
     border-bottom: 1px solid lightgray;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper {
     float: left;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper h2 {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper h2 {
     margin-top: 0em;
     margin-bottom: 0.1em;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper h2 a {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper h2 a {
     color: #A9A9A9;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-position {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-position {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     margin-bottom: 0em;
     font-size: 1.1em;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-period {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-period {
     font-style: italic;
     font-size: 0.8em;
     margin-bottom: 0.8em;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .info-wrapper .careers-item-description {
+.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-description {
     font-family: 'Lato', sans-serif;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .image-wrapper {
+.career-content-wrapper .career-content-item .career-item-header .image-wrapper {
     float: right;
 }
-.careers-content-wrapper .careers-content-item .careers-item-header .image-wrapper img {
+.career-content-wrapper .career-content-item .career-item-header .image-wrapper img {
     width: 100%;
 }
-.careers-content-wrapper .careers-content-item .careers-item-skills {
+.career-content-wrapper .career-content-item .career-item-skills {
     padding: 1em 2em 2em;
 }
-.careers-content-wrapper .careers-content-item .careers-item-skills h3 {
+.career-content-wrapper .career-content-item .career-item-skills h3 {
     margin-top: 0em;
     font-size: 1em;
     font-weight: normal;
@@ -316,5 +333,5 @@ table {
 }
 
 
-/******* END CAREERS SECTION *******/
+/******* END career SECTION *******/
 
