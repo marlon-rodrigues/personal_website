@@ -173,7 +173,7 @@ table {
 }
 #sub-navigation .sub-navigation-body ul li i {
     position: absolute;
-    top: 40%;
+    top: 42%;
     right: 1em;
 }
 /******* END SUB NAVIGATION ******/
@@ -194,13 +194,40 @@ table {
     background: rgba(249,250,251,1);
 }
 #content-wrapper .content-body {
-    padding: 2em 2em 5em;
+    padding: 2em 2em;
+}
+#content-wrapper .content-body:last-child {
+    padding-bottom: 5em;
 }
 #content-wrapper .content-body .box-wrapper {
     background: white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     margin-bottom: 2.5em;
+}
+.content-wrapper-title {
+    margin-bottom: 1em;
+}
+.content-wrapper-title span:first-child {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    padding: 0.1em 0.5em;
+    font-weight: bold;
+    color: #e24e42;
+}
+.content-wrapper-title span:last-child {
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    vertical-align: middle;
+    color: #e24e42;
 }
 /******* END SITE CONTENT **********/
 
@@ -212,7 +239,7 @@ table {
 }
 .career-content-wrapper {
     /*opacity: 0.9;*/
-    background: #ffffff;
+    background: transparent;
 }
 .career-content-wrapper .career-content-item .career-item-header {
     padding: 2em 2em 1em;
@@ -288,8 +315,8 @@ table {
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
-    /*background:#6adcfa;*/
-    background:#97c13c;
+    background:#6adcfa;
+    /*background:#97c13c;*/
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:4px;
     -moz-border-radius-topleft:3px;
@@ -315,8 +342,8 @@ table {
 .skillbar-bar {
     height:25px;
     width:0px;
-    /*background:#6adcfa;*/
-    background:#97c13c;
+    background:#6adcfa;
+    /*background:#97c13c;*/
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
