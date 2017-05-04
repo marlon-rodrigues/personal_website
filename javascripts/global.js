@@ -28,7 +28,10 @@ $(document).ready(function(){
 	templateLoad('career', null, '#career', loadcareerSkillsSet);	
 
 		//load education
-	templateLoad('education', null, '#education', loadcareerSkillsSet);	
+	templateLoad('education', null, '#education', null);	
+
+		//load projects
+	templateLoad('projects', null, '#projects', loadProjectsSections);	
 
 	function setupMainNavigation() {
 		$('.main-nav-item').click(function(e){
@@ -72,10 +75,20 @@ $(document).ready(function(){
 		});
 	}
 
+	function loadProjectsSections() {
+		templateLoad('projects-ai', null, '#projects-ai', function(){
+			templateLoad('projects-apps', null, '#projects-apps', function(){
+				templateLoad('projects-apps', null, '#projects-apps',loadProjectsCarousels());
+			});
+		});	
+	}
 
-	function createcareerCarousel() {
-		$('.career-content-wrapper').owlCarousel({
+	function loadProjectsCarousels() {
+		$('.projects-content-item').matchHeight();
+
+		$('.projects-carousel-ai').owlCarousel({
 			items: 1,
+			loop: true,
 			nav: false
 		});
 	}

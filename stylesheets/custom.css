@@ -130,7 +130,7 @@ table {
 }
 #sub-navigation .sub-navigation-item {
     /*height: 55%;*/
-    height: 75%;
+    height: 70%;
     overflow: scroll;
     display: none;
 }
@@ -229,55 +229,49 @@ table {
     vertical-align: middle;
     color: #e24e42;
 }
-/******* END SITE CONTENT **********/
-
-/******* BEGIN career SECTION *******/
-#career {
-    /*background-image: url("../images/career_background_image.jpg");*/
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.career-content-wrapper {
-    /*opacity: 0.9;*/
+.box-content-wrapper {
     background: transparent;
 }
-.career-content-wrapper .career-content-item .career-item-header {
+.box-content-wrapper .box-wrapper .box-item-header {
     padding: 2em 2em 1em;
     border-bottom: 1px solid lightgray;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper {
     float: left;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper h2 {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper h2 {
     margin-top: 0em;
     margin-bottom: 0.1em;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper h2 a {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper h2 a {
     color: #A9A9A9;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-position {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-position {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     margin-bottom: 0em;
     font-size: 1.1em;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-period {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-period {
     font-style: italic;
     font-size: 0.8em;
     margin-bottom: 0.8em;
 }
-.career-content-wrapper .career-content-item .career-item-header .info-wrapper .career-item-description {
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-description {
     font-family: 'Lato', sans-serif;
 }
-.career-content-wrapper .career-content-item .career-item-header .image-wrapper {
+.box-content-wrapper .box-wrapper .box-item-header .image-wrapper {
     float: right;
 }
-.career-content-wrapper .career-content-item .career-item-header .image-wrapper img {
+.box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
     width: 100%;
 }
-.career-content-wrapper .career-content-item .career-item-skills {
+/******* END SITE CONTENT **********/
+
+/******* BEGIN CAREER SECTION *******/
+.box-content-wrapper .box-wrapper .career-item-skills {
     padding: 1em 2em 2em;
 }
 .career-content-wrapper .career-content-item .career-item-skills h3 {
@@ -358,7 +352,62 @@ table {
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
 }
+/******* END CAREER SECTION *******/
 
+/******* BEGIN PROJECTS SECTION *****/
+.education-content-wrapper .education-content-item .box-item-header {
+    border-bottom: none;
+    padding-bottom: 2em;
+}
+.projects-content-wrapper h2.projects-title {
+    color: #555;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: right;
+    font-weight: normal;
+}
+.projects-content-wrapper .projects-carousel-ai .owl-item .projects-content-item {
+    box-shadow: none !important;
+    margin-bottom: 0em !important; 
+}
+.projects-content-wrapper .projects-content-item .project-item-header {
+    height: 100%;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper {
+    padding: 2em;   
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper > .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper h2 {
+    margin-top: 0em;
+    margin-bottom: 0.1em;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper h2 a {
+    color: #A9A9A9;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper .box-item-platform {
+    font-weight: bold;
+    color: #6adcfa;
+    margin-bottom: 0.6em;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper,
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper > .row {
+    height: 100%;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.projects-content-wrapper .projects-carousel-ai .owl-item {
+    background: #ffffff;
+    border-radius: 12px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #6EC4DB;
+}
+/******* END PROJECTS SECTION *****/
 
-/******* END career SECTION *******/
 
