@@ -1,0 +1,50 @@
+id,value
+skills
+skills.web
+skills.web.Ajax,3970
+skills.web.jQuery,3000
+skills.web.Javascript,4671
+skills.web.HTML5,3000
+skills.web.CSS,2760
+skills.web.NodeJS,2264
+skills.web.Handlebars,1671
+skills.web.Bootstrap,2751
+skills.web.Foundation,892
+skills.web.SASS,2712
+skills.web.Gulp,2323
+skills.web.Joomla,2000
+skills.web.WordPress,1780
+
+skills.frameworks
+skills.frameworks.Ruby on Rails,1512
+skills.frameworks.Zend Framework,618
+skills.frameworks.Durandal,2212
+skills.frameworks.EmberJS,989
+skills.frameworks.CodeIgniter,1252
+skills.frameworks.Express,1352
+
+skills.repo
+skills.repo.Git,1722
+skills.repo.Mercurial,921
+skills.repo.TFS,1245
+
+skills.sql
+skills.sql.MySQL,3321
+skills.sql.MSQL,3321
+skills.sql.SQLite,1591
+
+skills.languages
+skills.languages.PHP,5000
+skills.languages.C#,2832
+skills.languages.Visual Basic,2221
+skills.languages.Visual Fox Pro,650
+skills.languages.Ruby,1512
+skills.languages.Swift,1001
+skills.languages.Objective C,989
+skills.languages.Java,1576
+skills.languages.Python,3361
+
+skills.ai
+skills.ai.OpenCV,1546
+skills.ai.TensorFlow,3562
+skills.ai.Keras,2987
