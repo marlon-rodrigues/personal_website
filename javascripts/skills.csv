@@ -1,9 +1,9 @@
 id,value
 skills
 skills.web
-skills.web.Ajax,3970
-skills.web.jQuery,3000
-skills.web.Javascript,4671
+skills.web.Ajax,1970
+skills.web.Jquery,3000
+skills.web.Javascript,3271
 skills.web.HTML5,3000
 skills.web.CSS,2760
 skills.web.NodeJS,2264
@@ -12,8 +12,8 @@ skills.web.Bootstrap,2751
 skills.web.Foundation,892
 skills.web.SASS,2712
 skills.web.Gulp,2323
-skills.web.Joomla,2000
-skills.web.WordPress,1780
+skills.web.Joomla,1800
+skills.web.WordPress,1380
 
 skills.frameworks
 skills.frameworks.Ruby on Rails,1512
@@ -42,7 +42,7 @@ skills.languages.Ruby,1512
 skills.languages.Swift,1001
 skills.languages.Objective C,989
 skills.languages.Java,1576
-skills.languages.Python,3361
+skills.languages.Python,1861
 
 skills.ai
 skills.ai.OpenCV,1546

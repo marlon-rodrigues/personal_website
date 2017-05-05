@@ -156,7 +156,6 @@ $(document).ready(function(){
 		  node.append("circle")
 		      .attr("id", function(d) { return d.id; })
 		      .attr("r", function(d) { return d.r; });
-		      //.style("fill", function(d) { return color(d.package); });
 
 		  node.append("clipPath")
 		      .attr("id", function(d) { return "clip-" + d.id; })

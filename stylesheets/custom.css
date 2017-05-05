@@ -414,6 +414,15 @@ table {
 /******* END PROJECTS SECTION *****/
 
 /******* BEGIN SKILLS SECTION *****/
+#skills .box-wrapper {
+    text-align: center;
+}
+#skills .box-wrapper svg {
+    margin-top: -4em;
+}
+#skills .node text {
+    font-weight: bold;
+} 
 #skills .node circle[id^='skills.web'] {
     fill: rgba(194, 239, 235, 0.4);
     stroke: rgb(194, 239, 235);
