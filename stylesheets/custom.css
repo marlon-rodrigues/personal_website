@@ -421,39 +421,65 @@ table {
     font-weight: bold;
 } 
 #skills .node circle[id^='skills.web'] {
-    fill: rgba(194, 239, 235, 0.4);
-    stroke: rgb(194, 239, 235);
+    fill: rgba(48, 172, 220, 0.4);
+    stroke: rgb(48, 172, 220);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.frameworks'] {
-    fill: rgba(113, 186, 213, 0.4);
-    stroke: rgb(113, 186, 213);
+    fill: rgba(252, 193, 11, 0.4);
+    stroke: rgb(252, 193, 11);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.repo'] {
-    fill: rgba(196, 222, 247, 0.4);
-    stroke: rgb(196, 222, 247);
+    fill: rgba(36, 95, 84, 0.4);
+    stroke: rgb(36, 95, 84);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.sql'] {
-    fill: rgba(129, 164, 205, 0.4);
-    stroke: rgb(129, 164, 205);
+    fill: rgba(168, 50, 165, 0.4);
+    stroke: rgb(168, 50, 165,);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.languages'] {
-    fill: rgba(255, 143, 117, 0.4);
-    stroke: rgb(255, 143, 117);
+    fill: rgba(255, 0, 26, 0.4);
+    stroke: rgb(255, 0, 26);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.ai'] {
-    fill: rgba(226, 78, 66, 0.4);
-    stroke: rgb(226, 78, 66);
+    fill: rgba(49, 170, 52, 0.4);
+    stroke: rgb(49, 170, 52);
     stroke-width: 1px;
 }
 #skills .node circle[id^='skills.miscellaneous'] {
-    fill: rgba(129, 164, 205, 0.4);
-    stroke: rgb(129, 164, 205);
+    fill: rgba(150, 150, 150, 0.4);
+    stroke: rgb(150, 150, 150);
     stroke-width: 1px;
 }
 /******* END SKILLS SECTION *****/
 
+/******* BEGIN INTRODUCTION ******/
+#introduction {
+    position: fixed;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    /*background: rgba(55,169,199,1);
+    background: -moz-linear-gradient(left, rgba(55,169,199,1) 0%, rgba(81,195,225,1) 50%, rgba(107,219,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(55,169,199,1)), color-stop(50%, rgba(81,195,225,1)), color-stop(100%, rgba(107,219,250,1)));
+    background: -webkit-linear-gradient(left, rgba(55,169,199,1) 0%, rgba(81,195,225,1) 50%, rgba(107,219,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(55,169,199,1) 0%, rgba(81,195,225,1) 50%, rgba(107,219,250,1) 100%);
+    background: -ms-linear-gradient(left, rgba(55,169,199,1) 0%, rgba(81,195,225,1) 50%, rgba(107,219,250,1) 100%);
+    background: linear-gradient(to right, rgba(55,169,199,1) 0%, rgba(81,195,225,1) 50%, rgba(107,219,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a9c7', endColorstr='#6bdbfa', GradientType=1 );*/
+
+    background: rgba(106,220,250,1);
+    background: -moz-linear-gradient(left, rgba(106,220,250,1) 0%, rgba(81,195,225,1) 50%, rgba(55,169,199,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106,220,250,1)), color-stop(50%, rgba(81,195,225,1)), color-stop(100%, rgba(55,169,199,1)));
+    background: -webkit-linear-gradient(left, rgba(106,220,250,1) 0%, rgba(81,195,225,1) 50%, rgba(55,169,199,1) 100%);
+    background: -o-linear-gradient(left, rgba(106,220,250,1) 0%, rgba(81,195,225,1) 50%, rgba(55,169,199,1) 100%);
+    background: -ms-linear-gradient(left, rgba(106,220,250,1) 0%, rgba(81,195,225,1) 50%, rgba(55,169,199,1) 100%);
+    background: linear-gradient(to right, rgba(106,220,250,1) 0%, rgba(81,195,225,1) 50%, rgba(55,169,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6adcfa', endColorstr='#37a9c7', GradientType=1 );
+}
+/******* END INTRODUCTION ******/

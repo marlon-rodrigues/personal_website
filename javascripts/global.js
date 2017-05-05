@@ -15,6 +15,9 @@ function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - V
 }
 
 $(document).ready(function(){
+		//load introduction
+	templateLoad('introduction', null, '#introduction', showSite);	
+
 		//load site header
 	templateLoad('site-header', null, '#site-header', null);
 		
@@ -36,6 +39,11 @@ $(document).ready(function(){
 		//load skills
 	templateLoad('skills', null, '#skills', buildSkillsGraph);	
 
+	function showSite() {
+		$('.view-site').click(function(){
+			$('#introduction').slideUp(800);
+		});
+	}
 
 	function setupMainNavigation() {
 		$('.main-nav-item').click(function(e){
@@ -59,6 +67,10 @@ $(document).ready(function(){
 		        	window.location.hash = navSection;
 		      	});
 		  	}
+		});
+
+		$('.main-navigation-header img').click(function(){
+			$('#introduction').slideDown(800);
 		});
 	}
 
