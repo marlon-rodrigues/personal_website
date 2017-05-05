@@ -1,17 +1,18 @@
 id,value
 skills
 skills.web
-skills.web.Ajax,1970
-skills.web.Jquery,3000
-skills.web.Javascript,3271
+skills.web.Ajax,1470
+skills.web.Jquery,3271
+skills.web.Javascript,2000
 skills.web.HTML5,3000
-skills.web.CSS,2760
+skills.web.CSS,2260
 skills.web.NodeJS,2264
 skills.web.Handlebars,1671
 skills.web.Bootstrap,2751
-skills.web.Foundation,892
+skills.web.Foundation,592
 skills.web.SASS,2712
-skills.web.Gulp,2323
+skills.web.Gulp,1323
+skills.web.NPM,703
 skills.web.Joomla,1800
 skills.web.WordPress,1380
 
@@ -30,12 +31,12 @@ skills.repo.TFS,1245
 
 skills.sql
 skills.sql.MySQL,3321
-skills.sql.MSQL,3321
+skills.sql.MSSQL,3321
 skills.sql.SQLite,1591
 
 skills.languages
 skills.languages.PHP,5000
-skills.languages.C#,2832
+skills.languages.C#,2532
 skills.languages.Visual Basic,2221
 skills.languages.Visual Fox Pro,650
 skills.languages.Ruby,1512
@@ -46,5 +47,14 @@ skills.languages.Python,1861
 
 skills.ai
 skills.ai.OpenCV,1546
-skills.ai.TensorFlow,3562
-skills.ai.Keras,2987
+skills.ai.TensorFlow,3062
+skills.ai.Keras,2487
+
+skills.miscellaneous
+skills.miscellaneous.Visual Studio, 320
+skills.miscellaneous.Xcode, 220
+skills.miscellaneous.Eclipse, 180
+skills.miscellaneous.Sublime Text, 300
+skills.miscellaneous.Git Hub, 225
+skills.miscellaneous.Bit Bucket, 200
+skills.miscellaneous.Docker, 180
