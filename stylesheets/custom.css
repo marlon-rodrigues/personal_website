@@ -182,6 +182,12 @@ table {
     top: 42%;
     right: 1em;
 }
+#sub-navigation .sub-navigation-body ul li:hover a {
+    color: #63BEC9;
+}
+#sub-navigation .sub-navigation-body ul li:hover i {
+    color: #63BEC9;
+}
 /******* END SUB NAVIGATION ******/
 
 /******* BEGIN SITE CONTENT **********/

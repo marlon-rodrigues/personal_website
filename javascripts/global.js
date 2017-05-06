@@ -16,6 +16,7 @@ function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - V
 
 	//select menu and add/remove needed classes 
 function selectMenu(obj) {
+	console.log(obj.attr('sub-nav'));
 	$('.sub-navigation-item').slideUp('slow');
 	$('.sub-navigation-item').removeClass('active');
 	$('#' + obj.attr('sub-nav')).slideDown('slow');
@@ -26,6 +27,8 @@ function selectMenu(obj) {
 
 	return obj.children('a').attr('href');
 }
+
+var isAnimatedScrolling = false;
 
 $(document).ready(function(){
 		//load introduction
@@ -67,23 +70,17 @@ $(document).ready(function(){
 			if (!$(this).hasClass('active')) {
 				e.preventDefault();
 
-		    	/*$('.sub-navigation-item').slideUp('slow');
-		    	$('.sub-navigation-item').removeClass('active');
-		    	$('#' + $(this).attr('sub-nav')).slideDown('slow');
-		    	$('#' + $(this).attr('sub-nav')).addClass('active');
-
-		    	$('.main-nav-item').removeClass('active');
-		    	$(this).addClass('active');
-
-		    	var navSection = $(this).children('a').attr('href');*/
-
 		    	var navSection = selectMenu($(this));
+
+		    	isAnimatedScrolling = true;
 
 		    	$('html, body').animate({
 				    scrollTop: $(navSection).offset().top - 200
 				}, 750, function(){
 		        	// Add hash (#) to URL when done scrolling (default click behavior)
 		        	window.location.hash = navSection;
+
+		        	isAnimatedScrolling = false;
 		      	});
 		  	}
 		});
@@ -101,11 +98,15 @@ $(document).ready(function(){
 
 			  	var section = $(this).attr("href");
 
+			  	isAnimatedScrolling = true;
+
 			  	$('html, body').animate({
 				    scrollTop: $(section).offset().top - 200
 				}, 750, function(){
 		        	// Add hash (#) to URL when done scrolling (default click behavior)
 		        	window.location.hash = section;
+
+		        	isAnimatedScrolling = false;
 		      	});
 		  	}
 		});
@@ -209,41 +210,53 @@ $(document).ready(function(){
 	}
 });
 
-$(window).scroll(function() {
-    var wS = $(this).scrollTop();
-    var offset = 200;
-    var hTCareer = $('#career').offset().top - offset;
-    var hTEducation = $('#education').offset().top - offset;
-    var hTProjects = $('#projects').offset().top - offset;
-    var hTSkills = $('#skills').offset().top - offset;
-    var hTContact = $('#contact').offset().top - offset;
+$(window).scroll(function(e) {
 
-    var wST = $(window).scrollTop();
-    var wH = $(window).height();
-    var dH = $(document).height();
+	if(!isAnimatedScrolling) {
+		var wS = parseInt(Math.round($(this).scrollTop() + 2));
+	    var offset = 200;
+	    var hTCareer = parseInt(Math.round($('#career').offset().top - offset));
+	    var hTEducation = parseInt(Math.round($('#education').offset().top - offset));
+	    var hTProjects = parseInt(Math.round($('#projects').offset().top - offset));
+	    var hTSkills = parseInt(Math.round($('#skills').offset().top - offset));
+	    var hTContact = parseInt(Math.round($('#contact').offset().top - offset));
 
-    if(parseInt(wS) >= 0 && parseInt(wS) < parseInt(Math.round(hTEducation))) {
-    	if(!$('#sub-navigation-career').is(':visible')) {
-    		selectMenu($('#main-nav-career'));
-    	}
-    } else if(parseInt(wS) >= parseInt(Math.round(hTEducation)) && parseInt(wS) < parseInt(Math.round(hTProjects))) { 
-    	if(!$('#sub-navigation-education').is(':visible')) {
-    		selectMenu($('#main-nav-education'));
-    	}
-    } else if(parseInt(wS) >= parseInt(Math.round(hTProjects)) && parseInt(wS) < parseInt(Math.round(hTSkills))) { 
-    	if(!$('#sub-navigation-projects').is(':visible')) {
-    		selectMenu($('#main-nav-work'));
-    	}
-    } else if(parseInt(wS) >= parseInt(Math.round(hTSkills)) && parseInt(wS) < parseInt(Math.round(hTContact))) { 
-    	if(!$('#sub-navigation-skills').is(':visible')) {
-    		selectMenu($('#main-nav-skills-list'));
-    	}
-    } 
+	    var wST = parseInt($(window).scrollTop());
+	    var wH = parseInt($(window).height());
+	    var dH = parseInt($(document).height());
 
-    //if its a the bottom, always show the contact me sub nav
-    if( (parseInt(wST) + parseInt(wH)) == (parseInt(dH))) {
-		if(!$('#sub-navigation-contact').is(':visible')) {
-			selectMenu($('#main-nav-contact-me'));
+	    var navSection = "";
+
+	    console.log(wS + "," + hTCareer + "," + hTEducation + "," + hTProjects);
+
+	    if(wS >= 0 && wS < hTEducation) {
+	    	if(!$('#sub-navigation-career').is(':visible')) {
+	    		navSection = selectMenu($('#main-nav-career'));
+	    		window.location.hash = navSection;
+	    	}
+	    } else if(wS >= hTEducation && wS < hTProjects) { 
+	    	if(!$('#sub-navigation-education').is(':visible')) {
+	    		navSection = selectMenu($('#main-nav-education'));
+	    		window.location.hash = navSection;
+	    	}
+	    } else if(wS >= hTProjects && wS < hTSkills) { 
+	    	if(!$('#sub-navigation-projects').is(':visible')) {
+	    		navSection = selectMenu($('#main-nav-work'));
+	    		window.location.hash = navSection;
+	    	}
+	    } else if(wS >= hTSkills && wS < hTContact) { 
+	    	if(!$('#sub-navigation-skills').is(':visible')) {
+	    		navSection = selectMenu($('#main-nav-skills-list'));
+	    		window.location.hash = navSection;
+	    	}
+	    } 
+
+	    //if its a the bottom, always show the contact me sub nav
+	    if( (wST + wH) == dH) {
+			if(!$('#sub-navigation-contact').is(':visible')) {
+				navSection = selectMenu($('#main-nav-contact-me'));
+				window.location.hash = navSection;
+			}
 		}
-	}
+	} 
 });
