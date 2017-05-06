@@ -79,6 +79,9 @@ table {
     width: 300%;
     margin-left: -1.5em;
 } 
+#main-navigation .main-navigation-header img:hover {
+    cursor: pointer;
+}
 #main-navigation .main-navigation-body {
     margin-top: 12.5em;
     text-align: center;
@@ -94,7 +97,8 @@ table {
 }
 #main-navigation .main-navigation-body .main-nav-item i:hover {
     cursor: pointer;
-    color: #2C9BD9;
+    /*color: #2C9BD9;*/
+    color: #63BEC9;
 }
 #main-navigation .main-navigation-footer {
     position: fixed;
@@ -111,10 +115,12 @@ table {
 }
 #main-navigation .main-navigation-footer i:hover {
     cursor: pointer;
-    color: #2C9BD9;
+    /*color: #2C9BD9;*/
+    color: #63BEC9;
 }
 #main-navigation .main-nav-item.active i {
-    color: #6EC4DB;
+    /*color: #6EC4DB;*/
+    color: #7DD8E3;
 }   
 /******* END MAIN NAVIGATION *********/
 
@@ -309,7 +315,8 @@ table {
     font-weight:bold;
     font-size:13px;
     color:#ffffff;
-    background:#6adcfa;
+    /*background:#6adcfa;*/
+    background: #7DD8E3;
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:4px;
     -moz-border-radius-topleft:3px;
@@ -334,7 +341,8 @@ table {
 .skillbar-bar {
     height:25px;
     width:0px;
-    background:#6adcfa;
+    /*background:#6adcfa;*/
+    background: #7DD8E3;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -562,15 +570,32 @@ table {
     margin-bottom: 0em;
 }
 .splash {
-    background-image: url('../images/splash6.jpg');
+    background-image: url('../images/splash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
-    z-index: 100000000000;
+    /*z-index: 100000000000;*/
     width: 100%;
     height: 100%;
     opacity: 0.1;
     right: 0;
 }
 /******* END INTRODUCTION ******/
+
+/******* BEGIN CONTACT ME SECTION *******/
+.contact-content-wrapper .info-wrapper .box-item-description {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #3a2d27;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.contact-content-wrapper .info-wrapper .box-item-description a {
+    color: #7DD8E3;
+}
+.contact-content-wrapper .info-wrapper .box-item-description a:hover {
+    text-decoration: none;
+}
+/******* END CONTACT ME SECTION *******/

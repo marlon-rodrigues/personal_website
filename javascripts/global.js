@@ -39,9 +39,13 @@ $(document).ready(function(){
 		//load skills
 	templateLoad('skills', null, '#skills', buildSkillsGraph);	
 
+		//load contact me
+	templateLoad('contact', null, '#contact', null);	
+
+
 	function showSite() {
 		$('.view-site').click(function(){
-			$('#introduction').addClass('hinge');
+			$('#introduction').addClass('fadeOutUp');
 		});
 	}
 
@@ -70,8 +74,8 @@ $(document).ready(function(){
 		});
 
 		$('.main-navigation-header img').click(function(){
-			$('#introduction').removeClass('hinge');
-			$('#introduction').addClass('fadeInUp');
+			$('#introduction').removeClass('fadeOutUp');
+			$('#introduction').addClass('fadeInDown');
 		});
 	}
 
@@ -188,4 +192,19 @@ $(document).ready(function(){
 		      .text(function(d) { return d.id + "\n" + format(d.value); });
 		});
 	}
+});
+
+$(window).scroll(function() {
+		
+   var hT = $('#skills').offset().top - 200,
+       hH = $('#skills').outerHeight(),
+       wH = $('#content-wrapper').height(),
+       wS = $(this).scrollTop();
+
+       //console.log(hT + "," + hH + "," + wH + "," + wS);
+console.log(Math.round(hT) + "," + wS);
+   //if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+   if (Math.round(hT) == wS){
+      console.log('asdas');
+   } 
 });
