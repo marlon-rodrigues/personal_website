@@ -14,6 +14,7 @@ html {
 body {
     height: 100%;
     color: #525c65;
+    background: rgba(249,250,251,1);
 }
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -56,6 +57,9 @@ table {
 /******* END SITE HEADER **********/
 
 /******* BEGIN MAIN NAVIGATION *********/
+.mobile-navigation-container {
+    display: none;
+}
 .main-navigation-container {
     margin-left: -15px;
     margin-right: -15px;
@@ -204,6 +208,7 @@ table {
     width: 88.5%;*/
     margin-left: 17.999%;
     background: rgba(249,250,251,1);
+    overflow: hidden;
 }
 #content-wrapper .content-body {
     padding: 2em 2em;
@@ -605,3 +610,101 @@ table {
     text-decoration: none;
 }
 /******* END CONTACT ME SECTION *******/
+
+/*********** BEGIN MEDIA QUERIES *********/
+@media(max-width: 1199px){
+    .introduction-container-wrapper {
+        margin-top: 0em;
+    }
+    .page-cut-off {
+        border-bottom: 250px solid white;
+        border-left: 1000px solid transparent;
+    }
+    .content-container {
+        margin-left: 0.6em;
+    }
+    #sub-navigation .sub-navigation-item {
+        height: 60%;
+    }
+}
+@media(max-width: 1050px){ 
+    .content-container {
+        margin-left: 1.8em;
+    }
+}
+@media(max-width: 991px){
+    .site-header-container {
+        display: none;
+    }
+    .main-navigation-container {
+        display: none;
+    }
+    #sub-navigation { 
+        display: none;
+    }
+    .content-container {
+        width: 100%;
+        margin-left: 0em;
+        margin-top: 3em;
+    }
+    #content-wrapper {
+        margin-left: 0em;
+    }
+    .mobile-navigation-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+    }
+}
+@media(max-width: 767px){
+    .introduction-container-wrapper {
+        margin-top: 2em;
+    }
+    .page-cut-off {
+        display: none;
+    }
+    .introduction-container-wrapper .intro-header p {
+        font-size: 1em;
+    }
+    .introduction-container-wrapper .intro-header h1 {
+        font-size: 3em;
+    }
+    .introduction-container-wrapper .intro-body .intro-section-title {
+        font-size: 1em;
+    }
+
+}
+@media(max-width: 530px){
+    .intro-medias ul li {
+        margin-right: 1.5em;
+    }
+    .intro-medias ul li i {
+        font-size: 2em;
+    }
+}   
+@media(max-width: 320px){
+    .introduction-container-wrapper {
+        margin-top: 1em;
+    }
+    .introduction-container-wrapper .intro-header p {
+        font-size: 0.9em;
+    }
+    .introduction-container-wrapper .intro-header h1 {
+        font-size: 1.8em;
+    }
+    .introduction-container-wrapper .intro-body .intro-section-title {
+        font-size: 0.9em;
+    }
+    .introduction-container-wrapper .intro-body p {
+        font-size: 0.9em;
+    }
+    .intro-medias ul li {
+        margin-right: 1em;
+    }
+    .intro-medias ul li i {
+        font-size: 1.7em;
+    }
+}    
+/*********** END MEDIA QUERIES *********/

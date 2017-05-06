@@ -36,6 +36,9 @@ $(document).ready(function(){
 
 		//load site header
 	templateLoad('site-header', null, '#site-header', null);
+
+		//load mobile navigation
+	templateLoad('mobile-navigation', null, '#mobile-navigation-menu', setupMainNavigation);	
 		
 		//load main navigation 
 	templateLoad('main-navigation', null, '#main-navigation', setupMainNavigation);
@@ -208,6 +211,14 @@ $(document).ready(function(){
 		      .text(function(d) { return d.id + "\n" + format(d.value); });
 		});
 	}
+
+	$(window).resize(function() {
+	  if($(window).width() >= 768) {
+	  	isAnimatedScrolling = true;
+	  } else {
+	  	isAnimatedScrolling = false;
+	  }
+	});
 });
 
 $(window).scroll(function(e) {
