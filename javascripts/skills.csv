@@ -1,18 +1,20 @@
 id,value
 skills
 skills.web
-skills.web.Ajax,1470
+skills.web.Ajax,1070
 skills.web.Jquery,3271
 skills.web.Javascript,2000
 skills.web.HTML5,3000
 skills.web.CSS,2260
 skills.web.NodeJS,2264
-skills.web.Handlebars,1671
+skills.web.Handlebars,1271
+skills.web.Knockout,1671
 skills.web.Bootstrap,2751
 skills.web.Foundation,592
 skills.web.SASS,2712
 skills.web.Gulp,1323
-skills.web.NPM,703
+skills.web.NPM,503
+skills.web.Bower,303
 skills.web.Joomla,1800
 skills.web.WordPress,1380
 

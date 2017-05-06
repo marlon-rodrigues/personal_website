@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 	function showSite() {
 		$('.view-site').click(function(){
-			$('#introduction').slideUp(800);
+			$('#introduction').addClass('hinge');
 		});
 	}
 
@@ -70,7 +70,8 @@ $(document).ready(function(){
 		});
 
 		$('.main-navigation-header img').click(function(){
-			$('#introduction').slideDown(800);
+			$('#introduction').removeClass('hinge');
+			$('#introduction').addClass('fadeInUp');
 		});
 	}
 
