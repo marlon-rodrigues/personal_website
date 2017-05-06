@@ -14,6 +14,19 @@ function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - V
 	});
 }
 
+	//select menu and add/remove needed classes 
+function selectMenu(obj) {
+	$('.sub-navigation-item').slideUp('slow');
+	$('.sub-navigation-item').removeClass('active');
+	$('#' + obj.attr('sub-nav')).slideDown('slow');
+	$('#' + obj.attr('sub-nav')).addClass('active');
+
+	$('.main-nav-item').removeClass('active');
+	obj.addClass('active');
+
+	return obj.children('a').attr('href');
+}
+
 $(document).ready(function(){
 		//load introduction
 	templateLoad('introduction', null, '#introduction', showSite);	
@@ -54,7 +67,7 @@ $(document).ready(function(){
 			if (!$(this).hasClass('active')) {
 				e.preventDefault();
 
-		    	$('.sub-navigation-item').slideUp('slow');
+		    	/*$('.sub-navigation-item').slideUp('slow');
 		    	$('.sub-navigation-item').removeClass('active');
 		    	$('#' + $(this).attr('sub-nav')).slideDown('slow');
 		    	$('#' + $(this).attr('sub-nav')).addClass('active');
@@ -62,7 +75,9 @@ $(document).ready(function(){
 		    	$('.main-nav-item').removeClass('active');
 		    	$(this).addClass('active');
 
-		    	var navSection = $(this).children('a').attr('href');
+		    	var navSection = $(this).children('a').attr('href');*/
+
+		    	var navSection = selectMenu($(this));
 
 		    	$('html, body').animate({
 				    scrollTop: $(navSection).offset().top - 200
@@ -195,16 +210,40 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function() {
-		
-   var hT = $('#skills').offset().top - 200,
-       hH = $('#skills').outerHeight(),
-       wH = $('#content-wrapper').height(),
-       wS = $(this).scrollTop();
+    var wS = $(this).scrollTop();
+    var offset = 200;
+    var hTCareer = $('#career').offset().top - offset;
+    var hTEducation = $('#education').offset().top - offset;
+    var hTProjects = $('#projects').offset().top - offset;
+    var hTSkills = $('#skills').offset().top - offset;
+    var hTContact = $('#contact').offset().top - offset;
 
-       //console.log(hT + "," + hH + "," + wH + "," + wS);
-console.log(Math.round(hT) + "," + wS);
-   //if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-   if (Math.round(hT) == wS){
-      console.log('asdas');
-   } 
+    var wST = $(window).scrollTop();
+    var wH = $(window).height();
+    var dH = $(document).height();
+
+    if(parseInt(wS) >= 0 && parseInt(wS) < parseInt(Math.round(hTEducation))) {
+    	if(!$('#sub-navigation-career').is(':visible')) {
+    		selectMenu($('#main-nav-career'));
+    	}
+    } else if(parseInt(wS) >= parseInt(Math.round(hTEducation)) && parseInt(wS) < parseInt(Math.round(hTProjects))) { 
+    	if(!$('#sub-navigation-education').is(':visible')) {
+    		selectMenu($('#main-nav-education'));
+    	}
+    } else if(parseInt(wS) >= parseInt(Math.round(hTProjects)) && parseInt(wS) < parseInt(Math.round(hTSkills))) { 
+    	if(!$('#sub-navigation-projects').is(':visible')) {
+    		selectMenu($('#main-nav-work'));
+    	}
+    } else if(parseInt(wS) >= parseInt(Math.round(hTSkills)) && parseInt(wS) < parseInt(Math.round(hTContact))) { 
+    	if(!$('#sub-navigation-skills').is(':visible')) {
+    		selectMenu($('#main-nav-skills-list'));
+    	}
+    } 
+
+    //if its a the bottom, always show the contact me sub nav
+    if( (parseInt(wST) + parseInt(wH)) == (parseInt(dH))) {
+		if(!$('#sub-navigation-contact').is(':visible')) {
+			selectMenu($('#main-nav-contact-me'));
+		}
+	}
 });
