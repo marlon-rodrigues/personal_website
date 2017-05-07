@@ -211,63 +211,57 @@ $(document).ready(function(){
 		      .text(function(d) { return d.id + "\n" + format(d.value); });
 		});
 	}
-
-	$(window).resize(function() {
-	  if($(window).width() >= 768) {
-	  	isAnimatedScrolling = true;
-	  } else {
-	  	isAnimatedScrolling = false;
-	  }
-	});
 });
 
 $(window).scroll(function(e) {
+	if($(window).width() >= 992) {
 
-	if(!isAnimatedScrolling) {
-		var wS = parseInt(Math.round($(this).scrollTop() + 2));
-	    var offset = 200;
-	    var hTCareer = parseInt(Math.round($('#career').offset().top - offset));
-	    var hTEducation = parseInt(Math.round($('#education').offset().top - offset));
-	    var hTProjects = parseInt(Math.round($('#projects').offset().top - offset));
-	    var hTSkills = parseInt(Math.round($('#skills').offset().top - offset));
-	    var hTContact = parseInt(Math.round($('#contact').offset().top - offset));
+		if(!isAnimatedScrolling) {
+			var wS = parseInt(Math.round($(this).scrollTop() + 2));
+		    var offset = 200;
+		    var hTCareer = parseInt(Math.round($('#career').offset().top - offset));
+		    var hTEducation = parseInt(Math.round($('#education').offset().top - offset));
+		    var hTProjects = parseInt(Math.round($('#projects').offset().top - offset));
+		    var hTSkills = parseInt(Math.round($('#skills').offset().top - offset));
+		    var hTContact = parseInt(Math.round($('#contact').offset().top - offset));
 
-	    var wST = parseInt($(window).scrollTop());
-	    var wH = parseInt($(window).height());
-	    var dH = parseInt($(document).height());
+		    var wST = parseInt($(window).scrollTop());
+		    var wH = parseInt($(window).height());
+		    var dH = parseInt($(document).height());
 
-	    var navSection = "";
+		    var navSection = "";
 
-	    console.log(wS + "," + hTCareer + "," + hTEducation + "," + hTProjects);
+		    console.log(wS + "," + hTCareer + "," + hTEducation + "," + hTProjects);
 
-	    if(wS >= 0 && wS < hTEducation) {
-	    	if(!$('#sub-navigation-career').is(':visible')) {
-	    		navSection = selectMenu($('#main-nav-career'));
-	    		window.location.hash = navSection;
-	    	}
-	    } else if(wS >= hTEducation && wS < hTProjects) { 
-	    	if(!$('#sub-navigation-education').is(':visible')) {
-	    		navSection = selectMenu($('#main-nav-education'));
-	    		window.location.hash = navSection;
-	    	}
-	    } else if(wS >= hTProjects && wS < hTSkills) { 
-	    	if(!$('#sub-navigation-projects').is(':visible')) {
-	    		navSection = selectMenu($('#main-nav-work'));
-	    		window.location.hash = navSection;
-	    	}
-	    } else if(wS >= hTSkills && wS < hTContact) { 
-	    	if(!$('#sub-navigation-skills').is(':visible')) {
-	    		navSection = selectMenu($('#main-nav-skills-list'));
-	    		window.location.hash = navSection;
-	    	}
-	    } 
+		    if(wS >= 0 && wS < hTEducation) {
+		    	if(!$('#sub-navigation-career').is(':visible')) {
+		    		navSection = selectMenu($('#main-nav-career'));
+		    		window.location.hash = navSection;
+		    	}
+		    } else if(wS >= hTEducation && wS < hTProjects) { 
+		    	if(!$('#sub-navigation-education').is(':visible')) {
+		    		navSection = selectMenu($('#main-nav-education'));
+		    		window.location.hash = navSection;
+		    	}
+		    } else if(wS >= hTProjects && wS < hTSkills) { 
+		    	if(!$('#sub-navigation-projects').is(':visible')) {
+		    		navSection = selectMenu($('#main-nav-work'));
+		    		window.location.hash = navSection;
+		    	}
+		    } else if(wS >= hTSkills && wS < hTContact) { 
+		    	if(!$('#sub-navigation-skills').is(':visible')) {
+		    		navSection = selectMenu($('#main-nav-skills-list'));
+		    		window.location.hash = navSection;
+		    	}
+		    } 
 
-	    //if its a the bottom, always show the contact me sub nav
-	    if( (wST + wH) == dH) {
-			if(!$('#sub-navigation-contact').is(':visible')) {
-				navSection = selectMenu($('#main-nav-contact-me'));
-				window.location.hash = navSection;
+		    //if its a the bottom, always show the contact me sub nav
+		    if( (wST + wH) == dH) {
+				if(!$('#sub-navigation-contact').is(':visible')) {
+					navSection = selectMenu($('#main-nav-contact-me'));
+					window.location.hash = navSection;
+				}
 			}
-		}
-	} 
+		} 
+	}
 });
