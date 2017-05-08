@@ -380,7 +380,7 @@ table {
     margin-bottom: 0em !important; 
 }
 .projects-content-wrapper .projects-content-item .project-item-header {
-    height: 100%;
+    height: auto;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper {
     padding: 2em;   
@@ -405,11 +405,11 @@ table {
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper,
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper > .row {
-    height: 100%;
+    height: auto;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .projects-content-wrapper .owl-carousel .owl-item {
     background: #ffffff;
@@ -467,6 +467,27 @@ table {
     fill: rgba(150, 150, 150, 0.4);
     stroke: rgb(150, 150, 150);
     stroke-width: 1px;
+}
+.skills-wrapper-mobile {
+    display: none;
+    padding: 2em;
+}
+.skillbar-content-wrapper {
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background: #7DD8E3;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+.skillbar-content-wrapper .skillbar-content {
+    padding: 0.5em;
 }
 /******* END SKILLS SECTION *****/
 
@@ -808,6 +829,12 @@ table {
     .box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
         padding: 1em 2em 5em;
     }
+    .skills-wrapper {
+        display: none;
+    }
+    .skills-wrapper-mobile {
+        display: block;
+    }
 }
 @media(max-width: 530px){
     .intro-medias ul li {
@@ -840,6 +867,10 @@ table {
     }
     .contact-content-wrapper .info-wrapper .box-item-description {
         font-size: 1.2em;
+    }
+    .skills-content-item .skills-content-column {
+        width: 100%;
+        margin-bottom: -0.2em;
     }
 }
 @media(max-width: 368px){

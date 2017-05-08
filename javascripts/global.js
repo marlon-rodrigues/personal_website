@@ -88,7 +88,7 @@ $(document).ready(function(){
 		  	}
 		});
 
-		$('.main-navigation-header img').click(function(){
+		$('.main-navigation-header img, .mobile-header-image img').click(function(){
 			$('.introduction-wrapper').removeClass('fadeOutUp');
 			$('.introduction-wrapper').addClass('fadeInDown');
 		});
@@ -124,7 +124,14 @@ $(document).ready(function(){
 	}
 
 	function loadProjectsCarousels() {
-		$('.projects-content-item').matchHeight();
+		$('.projects-content-ai-item').matchHeight();
+		$('.match-projects-ai-height').matchHeight();
+
+		$('.projects-content-apps-item').matchHeight();
+		$('.match-projects-apps-height').matchHeight();
+
+		$('.projects-content-sites-item').matchHeight();
+		$('.match-projects-sites-height').matchHeight();
 
 		$('.projects-carousel-ai').owlCarousel({
 			items: 1,
@@ -210,6 +217,9 @@ $(document).ready(function(){
 		  node.append("title")
 		      .text(function(d) { return d.id + "\n" + format(d.value); });
 		});
+
+		//apply match height to mobile graph
+		$('.skills-content-column').matchHeight();
 	}
 });
 
