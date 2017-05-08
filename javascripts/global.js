@@ -228,7 +228,7 @@ $(window).scroll(function(e) {
 
 		if(!isAnimatedScrolling) {
 			var wS = parseInt(Math.round($(this).scrollTop() + 2));
-		    var offset = 200;
+		    var offset = 300;
 		    var hTCareer = parseInt(Math.round($('#career').offset().top - offset));
 		    var hTEducation = parseInt(Math.round($('#education').offset().top - offset));
 		    var hTProjects = parseInt(Math.round($('#projects').offset().top - offset));
@@ -246,22 +246,22 @@ $(window).scroll(function(e) {
 		    if(wS >= 0 && wS < hTEducation) {
 		    	if(!$('#sub-navigation-career').is(':visible')) {
 		    		navSection = selectMenu($('#main-nav-career'));
-		    		window.location.hash = navSection;
+		    		//window.location.hash = navSection;
 		    	}
 		    } else if(wS >= hTEducation && wS < hTProjects) { 
 		    	if(!$('#sub-navigation-education').is(':visible')) {
 		    		navSection = selectMenu($('#main-nav-education'));
-		    		window.location.hash = navSection;
+		    		//window.location.hash = navSection;
 		    	}
 		    } else if(wS >= hTProjects && wS < hTSkills) { 
 		    	if(!$('#sub-navigation-projects').is(':visible')) {
 		    		navSection = selectMenu($('#main-nav-work'));
-		    		window.location.hash = navSection;
+		    		//window.location.hash = navSection;
 		    	}
 		    } else if(wS >= hTSkills && wS < hTContact) { 
 		    	if(!$('#sub-navigation-skills').is(':visible')) {
 		    		navSection = selectMenu($('#main-nav-skills-list'));
-		    		window.location.hash = navSection;
+		    		//window.location.hash = navSection;
 		    	}
 		    } 
 
@@ -269,7 +269,7 @@ $(window).scroll(function(e) {
 		    if( (wST + wH) == dH) {
 				if(!$('#sub-navigation-contact').is(':visible')) {
 					navSection = selectMenu($('#main-nav-contact-me'));
-					window.location.hash = navSection;
+					//window.location.hash = navSection;
 				}
 			}
 		} 

@@ -149,6 +149,7 @@ table {
 }
 #sub-navigation .sub-navigation-image img {
     width: 100%;
+    display: none;
 }
 #sub-navigation .sub-navigation-header {
     padding: 0.5em 1em;
@@ -256,6 +257,8 @@ table {
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper h2 {
     margin-top: 0em;
     margin-bottom: 0.1em;
+    color: #A9A9A9;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper h2 a {
     color: #A9A9A9;
@@ -420,6 +423,9 @@ table {
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 20px;
+}
+.projects-content-apps-item img {
+    max-height: 250px !important;
 }
 /******* END PROJECTS SECTION *****/
 
@@ -738,6 +744,15 @@ table {
 }
 /******* END MOBILE MENU *********/
 
+/******* BEGIN FOOTER ********/
+#content-wrapper footer {
+    text-align: center;
+}
+#content-wrapper footer p {
+    font-size: 0.65em;
+}
+/******* END FOOTER ********/
+
 /*********** BEGIN MEDIA QUERIES *********/
 @media(max-width: 1199px){
     .introduction-container-wrapper {
@@ -872,6 +887,9 @@ table {
         width: 100%;
         margin-bottom: -0.2em;
     }
+    .contact-content-wrapper .info-wrapper .box-item-description a {
+        display: block;
+    }
 }
 @media(max-width: 368px){
     .mobile-header .mobile-header-name span {
@@ -888,9 +906,6 @@ table {
     }
     .contact-content-wrapper .info-wrapper .box-item-description {
         font-size: 1em;
-    }
-    .contact-content-wrapper .info-wrapper .box-item-description a {
-        display: block;
     }
     .navbar-default .mobile-intro-text {
         font-size: 1em;

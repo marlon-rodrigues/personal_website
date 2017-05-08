@@ -6,7 +6,7 @@ skills.web.Javascript,2000
 skills.web.CSS,2260
 skills.repo.Mercurial,921
 skills.languages.C#,2532
-skills.languages.Visual Basic,290
+skills.languages.Visual Basic,348
 skills.web.NPM,503
 skills.web.Bower,303
 skills.sql.SQLite,1591
@@ -16,7 +16,7 @@ skills.frameworks.Ruby on Rails,1512
 skills.frameworks.Zend Framework,758
 skills.miscellaneous.Git Hub, 225
 skills.web.HTML5,3000
-skills.miscellaneous.Bit Bucket, 300
+skills.miscellaneous.Bit Bucket, 325
 skills.frameworks.CodeIgniter,1252
 skills.web.Handlebars,1271
 skills.web.Knockout,1671
@@ -37,7 +37,8 @@ skills.web.Foundation,792
 skills.web.SASS,2712
 skills.web.Gulp,1323
 skills.languages.Objective C,989
-skills.languages.Java,1576
+skills.languages.Java,1276
+skills.miscellaneous.REST,320
 skills.languages.Python,1861
 skills.ai
 skills.ai.OpenCV,1546
@@ -45,10 +46,11 @@ skills.web.NodeJS,2264
 skills.ai.Keras,2487
 skills.miscellaneous
 skills.web.Jquery,3271
-skills.miscellaneous.Visual Studio, 320
+skills.miscellaneous.Visual Studio, 390
 skills.miscellaneous.Xcode, 280
-skills.miscellaneous.Eclipse, 300
+skills.miscellaneous.Eclipse, 350
 skills.web.Bootstrap,2751
 skills.languages.PHP,5000
-skills.miscellaneous.Sublime Text, 425
+skills.miscellaneous.Sublime Text, 475
 skills.miscellaneous.Docker, 300
+skills.web.SocketIO,1092
