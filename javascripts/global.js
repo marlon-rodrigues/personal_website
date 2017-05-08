@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 	function showSite() {
 		$('.view-site').click(function(){
-			$('#introduction').addClass('fadeOutUp');
+			$('.introduction-wrapper').addClass('fadeOutUp');
 		});
 	}
 
@@ -89,8 +89,8 @@ $(document).ready(function(){
 		});
 
 		$('.main-navigation-header img').click(function(){
-			$('#introduction').removeClass('fadeOutUp');
-			$('#introduction').addClass('fadeInDown');
+			$('.introduction-wrapper').removeClass('fadeOutUp');
+			$('.introduction-wrapper').addClass('fadeInDown');
 		});
 	}
 

@@ -253,9 +253,6 @@ table {
     padding: 2em 2em 1em;
     border-bottom: 1px solid lightgray;
 }
-.box-content-wrapper .box-wrapper .box-item-header .info-wrapper {
-    float: left;
-}
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper h2 {
     margin-top: 0em;
     margin-bottom: 0.1em;
@@ -278,9 +275,6 @@ table {
 }
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-description {
     font-family: 'Lato', sans-serif;
-}
-.box-content-wrapper .box-wrapper .box-item-header .image-wrapper {
-    float: right;
 }
 .box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
     width: 100%;
@@ -692,6 +686,7 @@ table {
     padding: 1em 2em;
     font-size: 1.2em;
     border-top: 1px solid #fff;
+    height: 100%;
 }
 .navbar-nav > li > .dropdown-menu {
     position: relative;
