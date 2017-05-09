@@ -16,7 +16,6 @@ function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - V
 
 	//select menu and add/remove needed classes 
 function selectMenu(obj) {
-	console.log(obj.attr('sub-nav'));
 	$('.sub-navigation-item').slideUp('slow');
 	$('.sub-navigation-item').removeClass('active');
 	$('#' + obj.attr('sub-nav')).slideDown('slow');
@@ -161,7 +160,7 @@ $(document).ready(function(){
 	}
 
 	function buildSkillsGraph() {
-		var svg = d3.select("svg"),
+		/*var svg = d3.select("svg"),
 	    width = +svg.attr("width"),
 	    height = +svg.attr("height");
 
@@ -219,7 +218,8 @@ $(document).ready(function(){
 		});
 
 		//apply match height to mobile graph
-		$('.skills-content-column').matchHeight();
+		$('.skills-content-column').matchHeight();*/
+		
 	}
 });
 
@@ -241,7 +241,7 @@ $(window).scroll(function(e) {
 
 		    var navSection = "";
 
-		    console.log(wS + "," + hTCareer + "," + hTEducation + "," + hTProjects);
+		    //console.log(wS + "," + hTCareer + "," + hTEducation + "," + hTProjects);
 
 		    if(wS >= 0 && wS < hTEducation) {
 		    	if(!$('#sub-navigation-career').is(':visible')) {

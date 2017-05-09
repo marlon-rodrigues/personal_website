@@ -237,9 +237,11 @@ table {
     padding: 0.1em 0.5em;
     font-weight: bold;
     color: #e24e42;
+    display: none;
 }
 .content-wrapper-title span:last-child {
-    margin-left: 0.5em;
+    /*margin-left: 0.5em;*/
+    margin-left: 0em;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -395,6 +397,8 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper h2 {
     margin-top: 0em;
     margin-bottom: 0.1em;
+    color: #A9A9A9;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper h2 a {
     color: #A9A9A9;
@@ -425,7 +429,10 @@ table {
     margin-top: 20px;
 }
 .projects-content-apps-item img {
-    max-height: 250px !important;
+    max-height: 200px !important;
+}
+.projects-content-sites-item img {
+    max-height: 200px !important; 
 }
 /******* END PROJECTS SECTION *****/
 
@@ -624,6 +631,9 @@ table {
 /******* END INTRODUCTION ******/
 
 /******* BEGIN CONTACT ME SECTION *******/
+.contact-content-wrapper.box-content-wrapper .box-wrapper .box-item-header {
+    padding: 1em 2em;
+}
 .contact-content-wrapper .info-wrapper .box-item-description {
     text-align: center;
     margin-top: 1em;
@@ -632,11 +642,14 @@ table {
     font-weight: bold;
     font-size: 1.4em;
 }
-.contact-content-wrapper .info-wrapper .box-item-description a {
-    color: #7DD8E3;
+.contact-content-wrapper .info-wrapper .box-item-description .intro-medias {
+    text-align: center;
 }
-.contact-content-wrapper .info-wrapper .box-item-description a:hover {
-    text-decoration: none;
+.contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul {
+    padding-left: 0em;
+}
+.contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li i {
+    color: #7DD8E3;
 }
 /******* END CONTACT ME SECTION *******/
 
@@ -880,15 +893,18 @@ table {
         text-align: left;
         font-size: 22px;
     }
-    .contact-content-wrapper .info-wrapper .box-item-description {
-        font-size: 1.2em;
-    }
     .skills-content-item .skills-content-column {
         width: 100%;
         margin-bottom: -0.2em;
     }
-    .contact-content-wrapper .info-wrapper .box-item-description a {
-        display: block;
+    .contact-content-wrapper .info-wrapper .box-item-description .intro-medias {
+        padding: 0em 0em 0em 0.5em;
+    }
+    .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li {
+        margin-right: 1em;
+    }
+    .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li a i {
+        font-size: 1.5em;
     }
 }
 @media(max-width: 368px){
@@ -903,9 +919,6 @@ table {
     }
     .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper h2 {
         font-size: 1.5em;
-    }
-    .contact-content-wrapper .info-wrapper .box-item-description {
-        font-size: 1em;
     }
     .navbar-default .mobile-intro-text {
         font-size: 1em;
