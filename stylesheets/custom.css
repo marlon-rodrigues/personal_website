@@ -273,6 +273,12 @@ table {
     margin-bottom: 0em;
     font-size: 1.1em;
 }
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-extra {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 0em;
+    font-size: 1em;   
+    font-weight: bold;
+}
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-period {
     font-style: italic;
     font-size: 0.8em;
@@ -283,6 +289,10 @@ table {
 }
 .box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
     width: 100%;
+}
+.box-wrapper .box-item-description h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1em;
 }
 /******* END SITE CONTENT **********/
 
@@ -416,7 +426,7 @@ table {
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 315px;
 }
 .projects-content-wrapper .owl-carousel .owl-item {
     background: #ffffff;
