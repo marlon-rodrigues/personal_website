@@ -55,7 +55,7 @@ $(document).ready(function(){
 	templateLoad('projects', null, '#projects', loadProjectsSections);	
 
 		//load skills
-	templateLoad('skills', null, '#skills', buildSkillsGraph);	
+	templateLoad('skills', null, '#skills', null);	
 
 		//load contact me
 	templateLoad('contact', null, '#contact', null);	
@@ -124,7 +124,7 @@ $(document).ready(function(){
 
 	function loadProjectsCarousels() {
 		$('.projects-content-ai-item').matchHeight();
-		$('.match-projects-ai-height').matchHeight();
+		//$('.match-projects-ai-height').matchHeight();
 
 		$('.projects-content-apps-item').matchHeight();
 		$('.match-projects-apps-height').matchHeight();
@@ -159,8 +159,9 @@ $(document).ready(function(){
 		});
 	}
 
+	//function used for the skills graph - currently not being used
 	function buildSkillsGraph() {
-		/*var svg = d3.select("svg"),
+		var svg = d3.select("svg"),
 	    width = +svg.attr("width"),
 	    height = +svg.attr("height");
 
@@ -218,7 +219,7 @@ $(document).ready(function(){
 		});
 
 		//apply match height to mobile graph
-		$('.skills-content-column').matchHeight();*/
+		$('.skills-content-column').matchHeight();
 		
 	}
 });

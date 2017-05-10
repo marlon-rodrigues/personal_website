@@ -444,11 +444,19 @@ table {
 .projects-content-sites-item img {
     max-height: 200px !important; 
 }
+.projects-content-wrapper .projects-content-ai-item .project-item-header .image-wrapper {
+    padding: 2em 2em;
+}
 /******* END PROJECTS SECTION *****/
 
 /******* BEGIN SKILLS SECTION *****/
 #skills .box-wrapper {
     text-align: center;
+}
+#skills .box-wrapper img { 
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
 }
 #skills .box-wrapper svg {
     margin-top: 0em;
@@ -867,12 +875,12 @@ table {
     .box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
         padding: 1em 2em 5em;
     }
-    .skills-wrapper {
+    /*.skills-wrapper {
         display: none;
     }
     .skills-wrapper-mobile {
         display: block;
-    }
+    }*/
 }
 @media(max-width: 530px){
     .intro-medias ul li {
