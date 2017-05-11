@@ -432,12 +432,6 @@ table {
     background: #ffffff;
     border-radius: 12px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #6EC4DB;
-}
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 20px;
-}
 .projects-content-wrapper .projects-content-ai-item .project-item-header .image-wrapper {
     padding: 2em 2em;
 }
@@ -537,7 +531,34 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.booking-app {
     background: url('../images/projects_space_booking_image.png');
 }
-
+.owl-carousel {
+    display: relative;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #6EC4DB;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+}
+.owl-theme .owl-nav .owl-prev {
+    position: absolute;
+    top: 35%;
+    left: -1.4em;
+}
+.owl-theme .owl-nav .owl-next {
+    position: absolute;
+    top: 35%;
+    right: -1.4em;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    background: transparent;
+    color: #6adcfa;
+    font-size: 2em;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #313D48;
+}
 /******* END PROJECTS SECTION *****/
 
 /******* BEGIN SKILLS SECTION *****/

@@ -135,19 +135,22 @@ $(document).ready(function(){
 		$('.projects-carousel-ai').owlCarousel({
 			items: 1,
 			loop: true,
-			nav: false
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
 		});
 
 		$('.projects-carousel-apps').owlCarousel({
 			items: 1,
 			loop: true,
-			nav: false
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
 		});
 
 		$('.projects-carousel-sites').owlCarousel({
 			items: 1,
 			loop: true,
-			nav: false
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>']
 		});
 	}
 
