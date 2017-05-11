@@ -438,15 +438,75 @@ table {
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 20px;
 }
-.projects-content-apps-item img {
-    max-height: 200px !important;
-}
-.projects-content-sites-item img {
-    max-height: 200px !important; 
-}
 .projects-content-wrapper .projects-content-ai-item .project-item-header .image-wrapper {
     padding: 2em 2em;
 }
+.projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a,
+.projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
+    z-index: 1000000;
+    position: absolute;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    left: 50%;
+    top: 45%;
+    font-size: 1.1em;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 250px;
+    position: relative;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5em;
+    height: 100%;
+    width: 150px;
+    height: 100%;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: white;
+    z-index: 10000;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.ungerboeck-site {
+    background: url('../images/projects_ungerboeck_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.agha-site {
+    background: url('../images/projects_agha_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.allencounty-site {
+    background: url('../images/projects_allencounty_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.misti-site {
+    background: url('../images/projects_misti_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.austoy-site {
+    background: url('../images/projects_austoy_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.pge-site {
+    background: url('../images/projects_pge_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.mphi-site {
+    background: url('../images/projects_mphi_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.chatham-site {
+    background: url('../images/projects_chatham_image.jpg');
+}
+
 /******* END PROJECTS SECTION *****/
 
 /******* BEGIN SKILLS SECTION *****/
@@ -881,6 +941,13 @@ table {
     .skills-wrapper-mobile {
         display: block;
     }*/
+    .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content::after {
+        display: none;
+    }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
+        left: 45%;
+    }
 }
 @media(max-width: 530px){
     .intro-medias ul li {
@@ -924,6 +991,10 @@ table {
     .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li a i {
         font-size: 1.5em;
     }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
+        left: 40%;
+    }
 }
 @media(max-width: 368px){
     .mobile-header .mobile-header-name span {
@@ -940,6 +1011,10 @@ table {
     }
     .navbar-default .mobile-intro-text {
         font-size: 1em;
+    }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
+        left: 35%;
     }
 }   
 @media(max-width: 320px){
@@ -970,6 +1045,9 @@ table {
     .navbar-default .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content {
+        height: 200px;
     }
 }  
 @media screen and ( max-height: 625px ){
