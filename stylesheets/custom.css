@@ -465,7 +465,7 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content {
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    height: 250px;
+    height: 290px;
     position: relative;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content::after {
@@ -481,6 +481,10 @@ table {
     -o-transform: skew(-20deg);
     background: white;
     z-index: 10000;
+}
+.projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description,
+.projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description {
+    max-width: 75%;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.ungerboeck-site {
     background: url('../images/projects_ungerboeck_image.png');
@@ -886,6 +890,10 @@ table {
     #sub-navigation .sub-navigation-item {
         height: 60%;
     }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description p, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description p {
+        font-size: 0.9em;
+    }
 }
 @media(max-width: 1050px){ 
     .content-container {
@@ -942,6 +950,10 @@ table {
     .navbar-collapse.collapse.in {
         display: block !important;
     }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description p, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description p {
+        font-size: 0.85em;
+    }
 }
 @media(max-width: 767px){
     .introduction-container-wrapper {
@@ -974,6 +986,14 @@ table {
     .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
     .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
         left: 45%;
+    }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description,
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description {
+        max-width: 100%;
+    }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description p, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description p {
+        font-size: 1em;
     }
 }
 @media(max-width: 530px){
