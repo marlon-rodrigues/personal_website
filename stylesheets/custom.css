@@ -506,6 +506,33 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.chatham-site {
     background: url('../images/projects_chatham_image.jpg');
 }
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.mcec-app {
+    background: url('../images/projects_mcec_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.dynamic-app {
+    background: url('../images/projects_madpoll_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.occc-app {
+    background: url('../images/projects_occc_hub_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.availability-app {
+    background: url('../images/projects_space_availability_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.cateru-app {
+    background: url('../images/projects_cateru_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.zoo-app {
+    background: url('../images/projects_zoo_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.nummus-app {
+    background: url('../images/projects_nummus_image.jpg');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.mapz-app {
+    background: url('../images/projects_mapz_image.png');
+}
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.booking-app {
+    background: url('../images/projects_space_booking_image.png');
+}
 
 /******* END PROJECTS SECTION *****/
 
@@ -1014,7 +1041,7 @@ table {
     }
     .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
     .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
-        left: 35%;
+        left: 30%;
     }
 }   
 @media(max-width: 320px){
