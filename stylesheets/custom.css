@@ -141,7 +141,8 @@ table {
 #sub-navigation .sub-navigation-item {
     /*height: 55%;*/
     height: 70%;
-    overflow: scroll;
+    /*overflow: scroll;*/
+    overflow: hidden;
     display: none;
 }
 #sub-navigation .sub-navigation-item.active {
@@ -198,8 +199,9 @@ table {
 /******* BEGIN SITE CONTENT **********/
 .content-container {
     height: 100%;
-    margin-top: 11.35em;
-    margin-left: 0em;
+    margin-top: 10em;
+    /*margin-left: 0em;*/
+    margin-left: -1%;
     padding-left: 0;
     padding-right: 0;
     width: 93.6%;
@@ -431,6 +433,9 @@ table {
     width: 100%;
     height: 315px;
 }
+.projects-content-wrapper .projects-content-ai-item .project-item-header .image-wrapper img {
+    height: 375px;
+}
 .projects-content-wrapper .owl-carousel .owl-item {
     background: #ffffff;
     border-radius: 12px;
@@ -487,7 +492,7 @@ table {
     margin-bottom: 0px;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.ungerboeck-site {
-    background: url('../images/projects_ungerboeck_image.png');
+    background: url('../images/projects_ungerboeck_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.agha-site {
     background: url('../images/projects_agha_image.png');
@@ -520,7 +525,7 @@ table {
     background: url('../images/projects_occc_hub_image.png');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.availability-app {
-    background: url('../images/projects_space_availability_image.png');
+    background: url('../images/projects_space_availability_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.cateru-app {
     background: url('../images/projects_cateru_image.jpg');
@@ -646,7 +651,8 @@ table {
     z-index: 1000000;
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    /*overflow: scroll;*/
+    overflow: visible;
     background: rgba(99,190,201,1);
     background: -moz-linear-gradient(left, rgba(99,190,201,1) 0%, rgba(83,186,167,1) 50%, rgba(71,179,128,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99,190,201,1)), color-stop(50%, rgba(83,186,167,1)), color-stop(100%, rgba(71,179,128,1)));
@@ -721,8 +727,10 @@ table {
 .page-cut-off {
     width: 50%;
     height: 100%;
-    border-bottom: 450px solid white;
-    border-left: 1400px solid transparent;
+    /*border-bottom: 450px solid white;
+    border-left: 1400px solid transparent;*/
+    border-bottom: 550px solid white;
+    border-left: 1500px solid transparent;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -786,6 +794,9 @@ table {
 }
 .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li i {
     color: #7DD8E3;
+}
+.contact-content-item.box-wrapper .box-item-header {
+    border-bottom: none;
 }
 /******* END CONTACT ME SECTION *******/
 
@@ -903,6 +914,16 @@ table {
 /******* END FOOTER ********/
 
 /*********** BEGIN MEDIA QUERIES *********/
+@media(max-width: 1640px){
+    .content-container {
+        margin-top: 11.4em;
+    }
+}
+@media(max-width: 1460px){ 
+    .content-container {
+        margin-left: 0em;
+    }
+}
 @media(max-width: 1199px){
     .introduction-container-wrapper {
         margin-top: 0em;
@@ -920,6 +941,11 @@ table {
     .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description p, 
     .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description p {
         font-size: 0.9em;
+    }
+}
+@media(max-width: 1158px){
+    .content-container {
+        margin-top: 12.8em;
     }
 }
 @media(max-width: 1050px){ 
@@ -983,6 +1009,9 @@ table {
     }
 }
 @media(max-width: 767px){
+    .introduction-wrapper {
+        overflow: scroll;
+    }
     .introduction-container-wrapper {
         margin-top: 2em;
     }
@@ -1133,7 +1162,7 @@ table {
         height: 200px;
     }
 }  
-@media screen and ( max-height: 625px ){
+@media screen and ( max-height: 665px ){
     .page-cut-off {
         display: none;
     }
@@ -1143,4 +1172,9 @@ table {
         bottom: 0em;
     }
 }  
+@media(min-width: 1730px){
+    .content-container {
+         margin-left: -1.6%;
+    }
+}
 /*********** END MEDIA QUERIES *********/
