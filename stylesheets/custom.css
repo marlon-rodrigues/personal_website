@@ -1070,6 +1070,12 @@ table {
         left: 40%;
     }
 }
+@media(max-width: 415px){
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
+    .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
+        left: 32%;
+    }
+}
 @media(max-width: 368px){
     .mobile-header .mobile-header-name span {
         display: none;

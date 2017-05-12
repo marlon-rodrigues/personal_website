@@ -60,7 +60,6 @@ $(document).ready(function(){
 		//load contact me
 	templateLoad('contact', null, '#contact', null);	
 
-
 	function showSite() {
 		$('.view-site').click(function(){
 			$('.introduction-wrapper').addClass('fadeOutUp');
@@ -91,6 +90,11 @@ $(document).ready(function(){
 			$('.introduction-wrapper').removeClass('fadeOutUp');
 			$('.introduction-wrapper').addClass('fadeInDown');
 		});
+
+			//mobile nav action
+		$('#mobile-navigation-menu .navbar-nav a.clickable').click(function(){
+			$('#mobile-navigation-menu .navbar-collapse').removeClass('in');
+		})
 	}
 
 	function setupSubNavigation() {
