@@ -1022,6 +1022,9 @@ table {
     .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description p {
         font-size: 1em;
     }
+    #contact .intro-medias {
+        z-index: 1;
+    }
 }
 @media(max-width: 530px){
     .intro-medias ul li {
