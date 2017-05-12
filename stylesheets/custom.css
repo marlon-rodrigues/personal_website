@@ -400,6 +400,9 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper {
     padding: 2em;   
 }
+.projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper {
+    padding-bottom: 0em;   
+}
 .projects-content-wrapper .projects-content-item .project-item-header .info-wrapper > .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -459,7 +462,7 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content {
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    height: 290px;
+    height: 295px;
     position: relative;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content::after {
@@ -479,6 +482,9 @@ table {
 .projects-content-wrapper .projects-content-sites-item .project-item-header .info-wrapper .box-item-description,
 .projects-content-wrapper .projects-content-apps-item .project-item-header .info-wrapper .box-item-description {
     max-width: 75%;
+}
+.projects-content-wrapper .projects-content-item .project-item-header .info-wrapper .box-item-description {
+    margin-bottom: 0px;
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.ungerboeck-site {
     background: url('../images/projects_ungerboeck_image.png');
