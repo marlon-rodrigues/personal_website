@@ -278,6 +278,9 @@ table {
     font-size: 1em;   
     font-weight: bold;
 }
+.box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-location {
+    font-size: 0.9em;
+}
 .box-content-wrapper .box-wrapper .box-item-header .info-wrapper .box-item-period {
     font-style: italic;
     font-size: 0.8em;
