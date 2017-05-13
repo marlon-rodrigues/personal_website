@@ -967,7 +967,15 @@ table {
         margin-left: 1.8em;
     }
 }
+@media screen and ( max-height: 680px ){
+    body {
+        overflow-y: scroll;
+    }
+}
 @media(max-width: 991px){
+    body {
+        overflow-y: visible;
+    }
     .introduction-container-wrapper {
         margin-left: 0em;
     }
