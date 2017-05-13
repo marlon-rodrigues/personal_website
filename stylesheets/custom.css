@@ -78,11 +78,11 @@ table {
 }
 #main-navigation .main-navigation-header {
     position: fixed;
-    width: 50px;
+    width: 75px;
 }
 #main-navigation .main-navigation-header img {
     width: 300%;
-    margin-left: -1.5em;
+    margin-left: -4.2em;
 } 
 #main-navigation .main-navigation-header img:hover {
     cursor: pointer;
@@ -148,10 +148,6 @@ table {
 }
 #sub-navigation .sub-navigation-item.active {
     display: block;
-}
-#sub-navigation .sub-navigation-image img {
-    width: 100%;
-    display: none;
 }
 #sub-navigation .sub-navigation-header {
     padding: 0.5em 1em;
@@ -496,7 +492,7 @@ table {
     background: url('../images/projects_ungerboeck_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.agha-site {
-    background: url('../images/projects_agha_image.png');
+    background: url('../images/projects_agha_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.allencounty-site {
     background: url('../images/projects_allencounty_image.jpg');
@@ -520,10 +516,10 @@ table {
     background: url('../images/projects_mcec_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.dynamic-app {
-    background: url('../images/projects_madpoll_image.png');
+    background: url('../images/projects_madpoll_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.occc-app {
-    background: url('../images/projects_occc_hub_image.png');
+    background: url('../images/projects_occc_hub_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.availability-app {
     background: url('../images/projects_space_availability_image.jpg');
@@ -538,10 +534,10 @@ table {
     background: url('../images/projects_nummus_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.mapz-app {
-    background: url('../images/projects_mapz_image.png');
+    background: url('../images/projects_mapz_image.jpg');
 }
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.booking-app {
-    background: url('../images/projects_space_booking_image.png');
+    background: url('../images/projects_space_booking_image.jpg');
 }
 .owl-carousel {
     display: relative;
@@ -1080,11 +1076,6 @@ table {
     .intro-footer {
         position: relative;
         height: 100%;
-    }
-    .mobile-header-image {
-        width: 100px;
-        top: 0.5em;
-        left: 0.5em;
     }
     .mobile-header .mobile-header-name {
         font-size: 1.1em;
