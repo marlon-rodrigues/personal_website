@@ -15,6 +15,7 @@ body {
     height: 100%;
     color: #525c65;
     background: rgba(249,250,251,1);
+    overflow-y: hidden;
 }
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -648,11 +649,10 @@ table {
 /******* BEGIN INTRODUCTION ******/
 .introduction-wrapper {
     position: fixed;
-    z-index: 1000000;
+    z-index: 100;
     width: 100%;
     height: 100%;
-    /*overflow: scroll;*/
-    overflow: visible;
+    overflow: scroll;
     background: rgba(99,190,201,1);
     background: -moz-linear-gradient(left, rgba(99,190,201,1) 0%, rgba(83,186,167,1) 50%, rgba(71,179,128,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99,190,201,1)), color-stop(50%, rgba(83,186,167,1)), color-stop(100%, rgba(71,179,128,1)));
@@ -760,6 +760,9 @@ table {
     font-size: 2.5em;
     margin-bottom: 0em;
 }
+.intro-medias ul li a:hover i {
+    color: #fff;
+}
 .splash {
     background-image: url('../images/splash.jpg');
     background-repeat: no-repeat;
@@ -788,12 +791,16 @@ table {
 }
 .contact-content-wrapper .info-wrapper .box-item-description .intro-medias {
     text-align: center;
+    z-index: 1;
 }
 .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul {
     padding-left: 0em;
 }
 .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li i {
     color: #7DD8E3;
+}
+.contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li a:hover i {
+    color: #6EC4DB;   
 }
 .contact-content-item.box-wrapper .box-item-header {
     border-bottom: none;
@@ -838,12 +845,13 @@ table {
 }
 #mobile-navigation-menu .navbar-default .navbar-collapse {
     position: fixed;
-    height: 100% !important;
+    /*height: 100% !important;*/
+    /*overflow: scroll !important;*/
+    height: 900px !important;
     background: #313D48;
     width: 100%;
     margin-left: -2.1em;
     margin-top: 0.9em;
-    overflow: scroll !important;
     padding-top: 2em;
     border: none;
 }
@@ -927,6 +935,7 @@ table {
 @media(max-width: 1199px){
     .introduction-container-wrapper {
         margin-top: 0em;
+        margin-left: 8.2em;
     }
     .page-cut-off {
         border-bottom: 250px solid white;
@@ -954,6 +963,9 @@ table {
     }
 }
 @media(max-width: 991px){
+    .introduction-container-wrapper {
+        margin-left: 0em;
+    }
     .site-header-container {
         display: none;
     }
@@ -975,7 +987,7 @@ table {
         display: block;
         position: fixed;
         top: 0;
-        z-index: 10000;
+        z-index: 99;
         width: 100%;
     }
 
@@ -1029,6 +1041,9 @@ table {
     }
     .box-content-wrapper .box-wrapper .box-item-header .image-wrapper img {
         padding: 1em 2em 5em;
+    }
+    .box-content-wrapper .career-content-item .box-item-header .image-wrapper img {
+        padding-bottom: 2em;
     }
     /*.skills-wrapper {
         display: none;
@@ -1103,9 +1118,11 @@ table {
     }
 }
 @media(max-width: 415px){
-    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a, 
     .projects-content-wrapper .projects-content-apps-item .project-item-header .image-wrapper a {
         left: 32%;
+    }
+    .projects-content-wrapper .projects-content-sites-item .project-item-header .image-wrapper a {
+        left: 36%;   
     }
 }
 @media(max-width: 368px){
@@ -1162,14 +1179,15 @@ table {
         height: 200px;
     }
 }  
-@media screen and ( max-height: 665px ){
+@media screen and ( max-height: 680px ){
     .page-cut-off {
         display: none;
     }
     .intro-footer {
         position: relative;
-        height: 100%;
+        height: auto;
         bottom: 0em;
+        padding-bottom: 3em;
     }
 }  
 @media(min-width: 1730px){

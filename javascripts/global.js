@@ -1,5 +1,5 @@
 	//load handlebars template
-function templateLoad(templateName, dataSource, htmlNode, callback) { //TODO - VERIFY IF I NEED THE DATA SOURCE
+function templateLoad(templateName, dataSource, htmlNode, callback) {
 	var templateFile = 'views/' + templateName + '.html';
 
 	jQuery.get(templateFile, function(template) { 
@@ -22,12 +22,16 @@ function selectMenu(obj) {
 	$('#' + obj.attr('sub-nav')).addClass('active');
 
 	$('.main-nav-item').removeClass('active');
-	obj.addClass('active');
+	
+	if(!isIntroVisible) {
+		obj.addClass('active');
+	}
 
 	return obj.children('a').attr('href');
 }
 
 var isAnimatedScrolling = false;
+var isIntroVisible = true;
 
 $(document).ready(function(){
 		//load introduction
@@ -62,7 +66,9 @@ $(document).ready(function(){
 
 	function showSite() {
 		$('.view-site').click(function(){
-			$('.introduction-wrapper').addClass('fadeOutUp');
+			$('.introduction-wrapper').slideUp('slow');
+			isIntroVisible = false;
+			$('body').css('overflow-y', 'visible');
 		});
 	}
 
@@ -70,6 +76,13 @@ $(document).ready(function(){
 		$('.main-nav-item').click(function(e){
 			if (!$(this).hasClass('active')) {
 				e.preventDefault();
+
+					//hide intro view if is visible
+			  	if($('.introduction-wrapper').is(':visible')) {
+					$('.introduction-wrapper').slideUp('slow');
+					isIntroVisible = false;
+				}
+				$('body').css('overflow-y', 'visible');
 
 		    	var navSection = selectMenu($(this));
 
@@ -87,8 +100,10 @@ $(document).ready(function(){
 		});
 
 		$('.main-navigation-header img, .mobile-header-image img').click(function(){
-			$('.introduction-wrapper').removeClass('fadeOutUp');
-			$('.introduction-wrapper').addClass('fadeInDown');
+			$('.introduction-wrapper').slideDown('slow');
+			$('.main-nav-item').removeClass('active');
+			$('body').css('overflow-y', 'hidden');
+			isIntroVisible = true;
 		});
 
 			//mobile nav action
