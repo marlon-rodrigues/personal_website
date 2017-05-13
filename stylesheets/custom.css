@@ -1083,6 +1083,9 @@ table {
     #contact .intro-medias {
         z-index: 1;
     }
+    .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li {
+        margin-right: 1em;
+    }
 }
 @media(max-width: 530px){
     .intro-medias ul li {
@@ -1114,9 +1117,6 @@ table {
     }
     .contact-content-wrapper .info-wrapper .box-item-description .intro-medias {
         padding: 0em 0em 0em 0.5em;
-    }
-    .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li {
-        margin-right: 1em;
     }
     .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li a i {
         font-size: 1.5em;
