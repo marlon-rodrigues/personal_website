@@ -971,14 +971,14 @@ table {
     }
 }
 @media screen and ( max-height: 680px ){
-    body {
+    /*body {
         overflow-y: scroll;
-    }
+    }*/
 }
 @media(max-width: 991px){
-    body {
+    /*body {
         overflow-y: visible;
-    }
+    }*/
     .introduction-container-wrapper {
         margin-left: 0em;
     }
