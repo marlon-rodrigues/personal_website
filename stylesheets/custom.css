@@ -515,6 +515,9 @@ table {
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.chatham-site {
     background: url('../images/projects_chatham_image.jpg');
 }
+.projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.bvs-site {
+    background: url('../images/projects_bvs_image.jpg');
+}
 .projects-content-wrapper .projects-content-item .project-item-header .image-wrapper .image-content.mcec-app {
     background: url('../images/projects_mcec_image.jpg');
 }
