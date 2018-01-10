@@ -89,7 +89,7 @@ $(document).ready(function(){
 		    	isAnimatedScrolling = true;
 
 		    	$('html, body').animate({
-				    scrollTop: $(navSection).offset().top - 200
+				    scrollTop: $(navSection).offset().top - 0 // initial value: 200
 				}, 750, function(){
 		        	// Add hash (#) to URL when done scrolling (default click behavior)
 		        	window.location.hash = navSection;
@@ -122,7 +122,7 @@ $(document).ready(function(){
 			  	isAnimatedScrolling = true;
 
 			  	$('html, body').animate({
-				    scrollTop: $(section).offset().top - 200
+				    scrollTop: $(section).offset().top - 0 // initial value: 200
 				}, 750, function(){
 		        	// Add hash (#) to URL when done scrolling (default click behavior)
 		        	window.location.hash = section;

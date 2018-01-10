@@ -1090,7 +1090,7 @@ table {
         z-index: 1;
     }
     .contact-content-wrapper .info-wrapper .box-item-description .intro-medias ul li {
-        margin-right: 1em;
+        margin-right: 0.6em;
     }
 }
 @media(max-width: 530px){
