@@ -38,6 +38,7 @@ table {
 .site-header-container {
     padding-left: 11.5em;
     padding-right: 1em;
+    padding-bottom: 1.5em;
     width: 100%;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
     position: fixed;
